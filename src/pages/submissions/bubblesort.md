@@ -2,6 +2,7 @@
 by: "Sahil Srinivas"
 title: "Bubble Sort"
 fileextension: "py"
+layout: '../../layouts/SubmissionLayout.astro'
 ---
 ```cpp
 #include <iostream>

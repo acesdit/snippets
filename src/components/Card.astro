@@ -1,11 +1,5 @@
 ---
-interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
-
-const { href, title, body } = Astro.props;
+const { href, title, author } = Astro.props;
 ---
 
 <li class="link-card">
@@ -15,7 +9,7 @@ const { href, title, body } = Astro.props;
 			<span>&rarr;</span>
 		</h2>
 		<p>
-			{body}
+			{author}
 		</p>
 	</a>
 </li>

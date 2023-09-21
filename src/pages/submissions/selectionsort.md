@@ -2,6 +2,7 @@
 by: "Yash Jawale"
 title: "Selection Sort"
 fileextension: "py"
+layout: '../../layouts/SubmissionLayout.astro'
 ---
 ```cpp
 #include <iostream>

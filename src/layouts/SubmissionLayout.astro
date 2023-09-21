@@ -1,0 +1,64 @@
+---
+import BaseLayout from './BaseLayout.astro'
+const { frontmatter } = Astro.props
+---
+
+<BaseLayout title={frontmatter.title}>
+  <h1 class="text-xl text-white">{frontmatter.title}</h1>
+  <p>{frontmatter.by}</p>
+  <!-- <p class="absolute top-0 right-0 bg-slate-600 p-3 text-sm text-white"></p> -->
+  <script>
+    let copyButtonLabel = 'Copy Code'
+    let codeBlocks = Array.from(document.querySelectorAll('pre'))
+
+    for (let codeBlock of codeBlocks) {
+      let wrapper = document.createElement('div')
+      wrapper.style.position = 'relative'
+
+      let copyButton = document.createElement('button')
+      copyButton.className = 'copy-code absolute top-0 right-0 bg-slate-600 p-3 text-sm text-white'
+      copyButton.innerHTML = copyButtonLabel
+
+      codeBlock.setAttribute('tabindex', '0')
+      codeBlock.appendChild(copyButton)
+      // wrap codebock with relative parent element
+      codeBlock.parentNode.insertBefore(wrapper, codeBlock)
+      wrapper.appendChild(codeBlock)
+
+      copyButton.addEventListener('click', async () => {
+        await copyCode(codeBlock, copyButton)
+      })
+    }
+
+    async function copyCode(block, button) {
+      let code = block.querySelector('code')
+      let text = code.innerText
+
+      await navigator.clipboard.writeText(text)
+
+      // visual feedback that task is completed
+      button.innerText = 'Code Copied'
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel
+      }, 700)
+    }
+  </script>
+  <slot />
+  <style>
+    .copy-code {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #3730a3;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      color: white;
+    }
+
+    .copy-code:hover {
+      background-color: #312e81;
+    }
+  </style>
+</BaseLayout>
