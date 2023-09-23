@@ -1,0 +1,29 @@
+---
+const languages = ['All', 'Python', 'JavaScript', 'C++']
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<h3>Languages: </h3>
+<ul class="flex gap-2 pb-6 pt-4 overflow-x-scroll">
+  {languages.map(category => <li><a  class={`text-sm bg-[#C7BFB4] px-4 py-2 rounded-lg whitespace-nowrap font-bold uppercase ${category}`} href="/">{category}</a></li>)}
+</ul>
+
+<style>
+  .All {
+    color: white;
+    background: linear-gradient(120deg, #687ce4 20%, #ed8030 80%);
+  }
+  .Python {
+    color: white;
+    background: #306998;
+  }
+  .JavaScript {
+    color: black;
+    background: #f0db4f;
+  }
+  .C\+\+ {
+    color: white;
+    background: #00549e;
+  }
+</style>

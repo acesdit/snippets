@@ -1,8 +1,9 @@
 ---
-by: "Yash Jawale"
-title: "Selection Sort"
-fileextension: "py"
 layout: '../../layouts/SubmissionLayout.astro'
+title: "Selection Sort"
+by: "Yash Jawale"
+fileextension: "py"
+category: "algorithm"
 ---
 ```cpp
 #include <iostream>

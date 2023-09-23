@@ -1,8 +1,9 @@
 ---
-by: "Sahil Srinivas"
-title: "Bubble Sort"
-fileextension: "py"
 layout: '../../layouts/SubmissionLayout.astro'
+title: "Bubble Sort"
+by: "Sahil Srinivas"
+fileextension: "cpp"
+category: "algorithm"
 ---
 ```cpp
 #include <iostream>

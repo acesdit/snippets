@@ -1,0 +1,9 @@
+---
+const categories = ['AppScript', 'Data Structures', 'Algorithms', 'Bash', 'Interview Questions']
+const pathname = new URL(Astro.request.url).pathname;
+const currentPath = pathname.slice(1);
+---
+
+<ul class="flex gap-2 pb-6 overflow-x-scroll">
+  {categories.map(category => <li class="text-sm bg-[#C7BFB4] px-4 py-2 rounded-lg whitespace-nowrap"><a href="/">{category}</a></li>)}
+</ul>

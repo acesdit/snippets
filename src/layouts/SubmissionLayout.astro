@@ -4,8 +4,9 @@ const { frontmatter } = Astro.props
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <h1 class="text-xl text-white">{frontmatter.title}</h1>
-  <p>{frontmatter.by}</p>
+  <h1 class="text-5xl font-bold pb-5">{frontmatter.title}</h1>
+  <p class="text-base pb-5">By {frontmatter.by}</p>
+  <p class="lg:w-2/3 overflow-hidden rounded-tr-lg"></p>
   <!-- <p class="absolute top-0 right-0 bg-slate-600 p-3 text-sm text-white"></p> -->
   <script>
     let copyButtonLabel = 'Copy Code'
@@ -14,12 +15,15 @@ const { frontmatter } = Astro.props
     for (let codeBlock of codeBlocks) {
       let wrapper = document.createElement('div')
       wrapper.style.position = 'relative'
+      wrapper.className = 'lg:w-2/3'
 
       let copyButton = document.createElement('button')
-      copyButton.className = 'copy-code absolute top-0 right-0 bg-slate-600 p-3 text-sm text-white'
+      copyButton.className =
+        'copy-code absolute top-0 right-0 bg-slate-600 p-3 text-sm rounded-tr-lg rounded-bl-lg text-white'
       copyButton.innerHTML = copyButtonLabel
 
       codeBlock.setAttribute('tabindex', '0')
+      codeBlock.className = 'p-10 rounded-lg'
       codeBlock.appendChild(copyButton)
       // wrap codebock with relative parent element
       codeBlock.parentNode.insertBefore(wrapper, codeBlock)
@@ -38,27 +42,15 @@ const { frontmatter } = Astro.props
 
       // visual feedback that task is completed
       button.innerText = 'Code Copied'
+      button.classList.toggle('text-[#00ff00]')
+      button.classList.toggle('text-white')
 
       setTimeout(() => {
         button.innerText = copyButtonLabel
+        button.classList.toggle('text-white')
+        button.classList.toggle('text-[#00ff00]')
       }, 700)
     }
   </script>
   <slot />
-  <style>
-    .copy-code {
-      position: absolute;
-      top: 0;
-      right: 0;
-      background-color: #3730a3;
-      padding: 0.25rem 0.5rem;
-      font-size: 0.75rem;
-      line-height: 1rem;
-      color: white;
-    }
-
-    .copy-code:hover {
-      background-color: #312e81;
-    }
-  </style>
 </BaseLayout>
