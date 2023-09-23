@@ -1,19 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Card from '../components/Card.astro';
+import CardList from '../components/CardList.astro';
 import CategorySelector from '../components/CategorySelector.astro';
 import LanguageSelector from '../components/LanguageSelector.astro';
 const allPosts  = await Astro.glob('../pages/submissions/*.md')
-console.log(allPosts[0].url)
 ---
 
 <BaseLayout title="Welcome to Astro.">
 	<main>
 		<CategorySelector/>
-		<LanguageSelector/>
-		<ul role="list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-			{allPosts.map(post => <Card href={post.url} title={post.frontmatter.title} author={post.frontmatter.by}/>)}
-		</ul>
+		<!-- <LanguageSelector/> -->
+		<CardList list={allPosts}/>
 	</main>
 </BaseLayout>
 

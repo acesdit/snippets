@@ -1,14 +1,32 @@
 ---
-const { href, title, author } = Astro.props;
+import { Image } from 'astro:assets';
+const { href, title, author, fileextension } = Astro.props;
+import pyImg from '../assets/py.svg'
+import jsImg from '../assets/js.svg'
+import cppImg from '../assets/cpp.svg'
+
+let img;
+switch(fileextension) {
+	case 'cpp':
+		img = cppImg;
+		break;
+	case 'py':
+		img = pyImg;
+		break;
+	case 'js':
+		img = jsImg;
+		break;
+}
 ---
 
-<li class="block bg-white p-6 rounded-lg border-solid border-2 border-black">
-	<a href={href}>
+<li>
+	<a href={href} class="block bg-white p-6 rounded-lg border-solid border-2 border-black relative">
 		<h2 class="font-bold text-3xl pb-4">
 			{title}
 		</h2>
 		<p>
 			By {author}
 		</p>
+		<Image src={img} class="w-6 absolute bottom-3 right-3" alt="A description of my image." />
 	</a>
 </li>

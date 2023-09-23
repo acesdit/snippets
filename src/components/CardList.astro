@@ -1,0 +1,15 @@
+---
+import Card from './Card.astro'
+const {list} = Astro.props
+---
+
+{list.length > 0 ? 
+<ul role="list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+  {list.map(item => <Card href={item.url} title={item.frontmatter.title} author={item.frontmatter.by} fileextension={item.frontmatter.fileextension}/>)}
+</ul> 
+: 
+<div class="h-[60vh] w-full flex flex-col items-center justify-center">
+  <div class="text-7xl pb-6">¯\_(ツ)_/¯</div>
+  No entries yet
+</div>}
+

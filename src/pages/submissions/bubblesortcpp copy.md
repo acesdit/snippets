@@ -1,9 +1,9 @@
 ---
 layout: '../../layouts/SubmissionLayout.astro'
-title: "Bubble Sort"
+title: "Bogo Sort"
 by: "Sahil Srinivas"
 fileextension: "cpp"
-category: "algorithm"
+category: "Algorithms"
 ---
 ```cpp
 #include <iostream>

@@ -3,7 +3,7 @@ layout: '../../layouts/SubmissionLayout.astro'
 title: "Selection Sort"
 by: "Yash Jawale"
 fileextension: "py"
-category: "algorithm"
+category: "Algorithms"
 ---
 ```cpp
 #include <iostream>

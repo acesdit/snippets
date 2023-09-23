@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import CardList from "../components/CardList.astro";
+import CategorySelector from "../components/CategorySelector.astro";
+import LanguageSelector from "../components/LanguageSelector.astro";
+
+export async function getStaticPaths() {
+  const allSubmissions = await Astro.glob('./submissions/*.md')
+  return [
+    {params: {category: "Algorithms"}, props: {submissions: allSubmissions}},
+    {params: {category: "Data Structures"}, props: {submissions: allSubmissions}},
+    {params: {category: "Bash"}, props: {submissions: allSubmissions}},
+    {params: {category: "AppScript"}, props: {submissions: allSubmissions}},
+    {params: {category: "Interview Questions"}, props: {submissions: allSubmissions}},
+  ];
+};
+
+const {category} = Astro.params;
+const {submissions} = Astro.props;
+const filteredSubmissions = submissions.filter((submission) => {
+  return(submission.frontmatter.category ==  category)})
+
+---
+
+<BaseLayout title={category}>
+  <CategorySelector/>
+  <!-- <LanguageSelector/> -->
+  <CardList list={filteredSubmissions}/>
+</BaseLayout>
