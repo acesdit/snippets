@@ -1,12 +1,12 @@
 ---
 import { Image } from 'astro:assets';
-const { href, title, author, fileextension } = Astro.props;
+const { href, title, author, extension } = Astro.props;
 import pyImg from '../assets/py.svg'
 import jsImg from '../assets/js.svg'
 import cppImg from '../assets/cpp.svg'
 
 let img;
-switch(fileextension) {
+switch(extension) {
 	case 'cpp':
 		img = cppImg;
 		break;
@@ -27,6 +27,6 @@ switch(fileextension) {
 		<p>
 			By {author}
 		</p>
-		<Image src={img} class="w-6 absolute bottom-3 right-3" alt="A description of my image." />
+		<Image src={img} class="w-6 absolute bottom-3 right-3" alt="Language Icon" />
 	</a>
 </li>

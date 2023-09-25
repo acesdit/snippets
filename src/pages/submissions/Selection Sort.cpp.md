@@ -3,6 +3,7 @@ extension: cpp
 author: yashjawale
 category: Algorithms
 layout: '../../layouts/SubmissionLayout.astro'
+title: Selection Sort
 ---
 ```cpp
 #include <iostream>

@@ -5,7 +5,7 @@ const { frontmatter } = Astro.props
 
 <BaseLayout title={frontmatter.title}>
   <h1 class="text-5xl font-bold pb-5">{frontmatter.title}</h1>
-  <p class="text-base pb-5">By {frontmatter.by}</p>
+  <p class="text-base pb-5">By {frontmatter.author}</p>
   <p class="lg:w-2/3 overflow-hidden rounded-tr-lg"></p>
   <!-- <p class="absolute top-0 right-0 bg-slate-600 p-3 text-sm text-white"></p> -->
   <script>
