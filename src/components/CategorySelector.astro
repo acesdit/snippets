@@ -5,7 +5,7 @@ const currentPath = pathname.slice(1);
 ---
 
 <ul class="flex gap-2 pb-6 overflow-x-scroll">
-  {categories.map(category => <li class=""><a class={`${currentPath === encodeURIComponent(category) ? 'active' : 'inactive'} block text-sm px-4 py-2 rounded-lg whitespace-nowrap`} href={`/${category}`}>{category}</a></li>)}
+  {categories.map(category => <li class=""><a class={`${currentPath.includes(encodeURIComponent(category)) ? 'active' : 'inactive'} block text-sm px-4 py-2 rounded-lg whitespace-nowrap`} href={`/snippets/${category}`}>{category}</a></li>)}
 </ul>
 
 <style>
