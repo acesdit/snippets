@@ -9,6 +9,7 @@ jobs:
 
       - name: Generate MD Files for Algorithms
         run: |
+          rm -f src/pages/submissions/*
           for file in ALGORITHMS/*; do
               if [ -f "$file" ]; then
                   filename=$(basename "$file")
@@ -33,7 +34,7 @@ jobs:
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
 
-                  echo "\`\`\`" >> "src/pages/submissions/$filename.md"
+                  echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
         working-directory: ${{ github.workspace }}
@@ -64,7 +65,7 @@ jobs:
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
 
-                  echo "\`\`\`" >> "src/pages/submissions/$filename.md"
+                  echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
         working-directory: ${{ github.workspace }}
@@ -95,7 +96,7 @@ jobs:
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
 
-                  echo "\`\`\`" >> "src/pages/submissions/$filename.md"
+                  echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
         working-directory: ${{ github.workspace }}
@@ -168,6 +169,4 @@ jobs:
         working-directory: ${{ github.workspace }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
-      - name: Publish Site
-        uses: ./.github/workflows/deploy.yml
+
