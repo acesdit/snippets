@@ -168,3 +168,6 @@ jobs:
         working-directory: ${{ github.workspace }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Publish Site
+        uses: ./.github/workflows/deploy.yml
