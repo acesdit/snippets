@@ -172,6 +172,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish site to GitHub Pages
-        uses: ./.github/workflows/deploy.yml
 

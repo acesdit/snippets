@@ -1,11 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Trigger the workflow every time you push to the `main` branch
-  # Using a different branch name? Replace `main` with your branch’s name
-  workflow_call:
-  # Allows you to run this workflow manually from the Actions tab on GitHub.
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Generate MD files from submissions"]
+    types:
+      - completed
 
 # Allow this job to clone the repo and create a page deployment
 permissions:
