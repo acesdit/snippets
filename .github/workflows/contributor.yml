@@ -1,3 +1,5 @@
+name: Add contributors to README
+
 on:
   push:
     branches:

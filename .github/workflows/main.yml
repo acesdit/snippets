@@ -1,3 +1,5 @@
+name: Generate MD files from submissions
+
 on: workflow_dispatch
 
 jobs:
@@ -169,4 +171,7 @@ jobs:
         working-directory: ${{ github.workspace }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Publish site to GitHub Pages
+        uses: ./.github/workflows/deploy.yml
 
