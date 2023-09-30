@@ -25,6 +25,20 @@ Collection of useful code snippets such as:
             <br />
             <sub><b>Sahil Srinivas</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/omkarvasekar">
+            <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
+            <br />
+            <sub><b>Omkar Vasekar</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/AnushkaSao">
+            <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
