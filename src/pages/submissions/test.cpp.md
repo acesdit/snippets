@@ -1,7 +1,7 @@
 ---
 extension: cpp
-author: yashjawale
-category: Algorithms
+author: Yash Jawale
+category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
 title: test
 ---

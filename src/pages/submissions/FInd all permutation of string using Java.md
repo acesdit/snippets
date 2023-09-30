@@ -1,7 +1,7 @@
 ---
 extension: md
-author: yashjawale
-category: Algorithms
+author: Yash Jawale
+category: Interview Questions
 layout: '../../layouts/SubmissionLayout.astro'
 title: FInd all permutation of string using Java
 ---

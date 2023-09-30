@@ -1,6 +1,6 @@
 ---
 extension: cpp
-author: yashjawale
+author: Yash Jawale
 category: Algorithms
 layout: '../../layouts/SubmissionLayout.astro'
 title: Bubble Sort
