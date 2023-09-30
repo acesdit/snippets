@@ -18,7 +18,7 @@ jobs:
                   echo "Creating $filename.md from $file"
                   
                   # Add front matter to the MD file
-                  echo "---" >> "src/pages/submissions/$filename.md"
+                  echo "---" > "src/pages/submissions/$filename.md"
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
@@ -49,7 +49,7 @@ jobs:
                   echo "Creating $filename.md from $file"
                   
                   # Add front matter to the MD file
-                  echo "---" >> "src/pages/submissions/$filename.md"
+                  echo "---" > "src/pages/submissions/$filename.md"
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
@@ -80,7 +80,7 @@ jobs:
                   echo "Creating $filename.md from $file"
                   
                   # Add front matter to the MD file
-                  echo "---" >> "src/pages/submissions/$filename.md"
+                  echo "---" > "src/pages/submissions/$filename.md"
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
@@ -111,7 +111,7 @@ jobs:
                   echo "Creating $filename.md from $file"
                   
                   # Add front matter to the MD file
-                  echo "---" >> "src/pages/submissions/$filename.md"
+                  echo "---" > "src/pages/submissions/$filename.md"
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
@@ -142,7 +142,7 @@ jobs:
                   echo "Creating $filename_noext.md from $file"
                   
                   # Add front matter to the MD file
-                  echo "---" >> "src/pages/submissions/$filename_noext.md"
+                  echo "---" > "src/pages/submissions/$filename_noext.md"
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename_noext.md" # Add the extension
                   
                   # Get the author's username who committed the file
