@@ -57,7 +57,7 @@ jobs:
                   # Get the author's username who committed the file
                   author_username=$(git log -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
-                  echo "category: Algorithms" >> "src/pages/submissions/$filename.md"
+                  echo "category: Data Structures" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
@@ -88,7 +88,7 @@ jobs:
                   # Get the author's username who committed the file
                   author_username=$(git log -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
-                  echo "category: Algorithms" >> "src/pages/submissions/$filename.md"
+                  echo "category: AppScript" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
@@ -119,7 +119,7 @@ jobs:
                   # Get the author's username who committed the file
                   author_username=$(git log -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
-                  echo "category: Algorithms" >> "src/pages/submissions/$filename.md"
+                  echo "category: Bash" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
@@ -150,7 +150,7 @@ jobs:
                   # Get the author's username who committed the file
                   author_username=$(git log -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename_noext.md" # Add the author
-                  echo "category: Algorithms" >> "src/pages/submissions/$filename_noext.md"
+                  echo "category: Interview Questions" >> "src/pages/submissions/$filename_noext.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename_noext.md"
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename_noext.md"
                   
