@@ -1,5 +1,11 @@
 # ACES Snippets
-Collection of useful code snippets
+Collection of useful code snippets such as:
+- Implementation of ubiquitous ```data structures``` such as arrays, linked lists and hash maps.
+- Examples of ```algorithms``` such bubble sort, dfs and bfs etc.
+- Snippets of ```Google Apps Script``` which can be used for scripting mail merge, google sheet data manipulation etc.
+- Commonly featured ```Interview Questions``` for renowned firms' tests conducted by recruiters in DIT,Pimpri.
+
+## To contribute to this repository please read [CONTRIBUTING.md](https://github.com/acesdit/snippets/blob/main/CONTRIBUTING.md)
 
 ## Contributors
 
