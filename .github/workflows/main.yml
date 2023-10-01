@@ -1,6 +1,9 @@
 name: Generate MD files from submissions
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   generate_md_files:
