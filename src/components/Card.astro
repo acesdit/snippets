@@ -4,6 +4,7 @@ const { href, title, author, extension } = Astro.props;
 import pyImg from '../assets/py.svg'
 import jsImg from '../assets/js.svg'
 import cppImg from '../assets/cpp.svg'
+import javaImg from '../assets/java.svg'
 import other from '../assets/other.svg'
 
 let img;
@@ -17,6 +18,8 @@ switch(extension) {
 	case 'js':
 		img = jsImg;
 		break;
+	case 'java':
+		img = javaImg;
 	default:
 		img = other;
 }
