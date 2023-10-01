@@ -11,7 +11,7 @@ Currently, only ```.py```, ```.cpp```, ```.js```, ```.java``` files are supporte
 Add code file with ```.sh``` file extension & place it in ```BASH``` folder.
 
 ## Adding App Scripts Snippets
-Add code file with ```.gs``` file extension & place it in ```APPS SCRIPT``` folder.
+Add code file with ```.js``` file extension & place it in ```APPS SCRIPT``` folder.
 
 ## Adding Interview Questions
 Add the questions & answers to a single [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) File with ```.md``` file extension.
