@@ -14,29 +14,9 @@ jobs:
         with:
           fetch-depth: '0'
 
-      - name: Clear existing files
-        run: |
-          ls src/pages/submissions/
-          rm -f src/pages/submissions/*.md
-          echo "Removed"
-          ls src/pages/submissions/
-        working-directory: ${{ github.workspace }}
-
-      - name: Add commit for removal
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "Removed previous files"
-          git push
-
-      - name: Checkout code
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: '0'
-
       - name: Generate MD Files for Algorithms
         run: |
+          rm -f src/pages/submissions/*.md
           for file in ALGORITHMS/*; do
               if [ -f "$file" ]; then
                   filename=$(basename "$file")
@@ -81,7 +61,6 @@ jobs:
                   
                   # Get the author's username who committed the file
                   author_username=$(git log --reverse -1 --format='%an' -- "$file")
-                  git log -- "$file"
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: Data Structures" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
@@ -191,7 +170,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add src/pages/submissions/*
+          git add .
           git commit -m "Generate MD files from code"
           git push
         working-directory: ${{ github.workspace }}
