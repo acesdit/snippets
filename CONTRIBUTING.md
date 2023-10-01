@@ -1,37 +1,29 @@
-![Hello in 10 Languages](https://www.oneworld365.org/img/000/45/45678.png)
+# Contribution Guide 📝
 
----
-### This repository's purpose is to serve as a knowledge bank with the website helping you through this heap of knowledge.
+Follow below guidelines for individual snippet types. Regardless of snippet type, be sure to follow the [**File name guidelines**](#📁-file-names)
 
-### Please go through the following steps to contribute to Snippets:
-<details>
-  <summary>For first-time contributors</summary>
-  Read Guides and cheat sheets
-  <ol>
- <li>Fork this repository.</li>
-<li>Copy this repository to your local environment using<code>git clone</code>.</li>
-<li>Add any snippets you wish to contribute: Apps Script or Bash programs, data structures and algorithms in <br>
-   <code>C++, Java,Python,JS</code> </li>
-<li>Compile and run the code for various inputs and outputs to ensure its verasity
-(Optional): Write test cases in a different file using libraries such as JUnit for Java or its equivalent in other languages.</li>
-<li>Make sure the code is well-documented, with comments and docstrings. Include a README.md to explain your code.<em>You can include code-snippets and screenshots</em></li>
-<li>Commit the changes and push it to the remote repository, ideally to a new branch or to the main branch.</li>
-<li>Create a pull request. Ensure that it describes your work in the title.You can ellaborate on it in the description.</li>
-<li>After verification we'll merge it to our growing collection of snippets!</li>
-</ol>
-</details>
-<details>
-<summary>For experienced contributors</summary>
-<ol>
- <li>Fork this repository.</li>
-<li>Copy this repository to your local environment using <code>git clone</code>.</li>
-<li>Add any snippets you wish to contribute: Apps Script or Bash programs, data structures and algorithms in <br>
-   <code>C++, Java,Python,JS</code> </li>
-<li>Compile and run the code for various inputs and outputs to ensure its verasity
-(Optional): Write test cases in a different file using libraries such as JUnit for Java or its equivalent in other languages.</li>
-<li>Make sure the code is well-documented, with comments and docstrings. Include a README.md to explain your code.<em>You can include code-snippets and screenshots</em></li>
-<li>Commit the changes and push it to the remote repository, ideally to a new branch or to the main branch.</li>
-<li>Create a pull request. Ensure that it describes your work in the title.You can ellaborate on it in the description.</li>
-<li>After verification we'll merge it to our growing collection of snippets!</li>
-</ol>
-</details>
+## Adding Algorithms & Data Structures
+Create code file with appropriate file extension & place it in ```ALGORITHMS``` or ```DATA STRUCTURES``` folder.
+
+Currently, only ```.py```, ```.cpp```, ```.js```, ```.java``` files are supported for Data Structures & Algorithms.
+
+## Adding Bash snippets
+Add code file with ```.sh``` file extension & place it in ```BASH``` folder.
+
+## Adding App Scripts Snippets
+Add code file with ```.gs``` file extension & place it in ```APPS SCRIPT``` folder.
+
+## Adding Interview Questions
+Add the questions & answers to a single [Markdown](https://www.markdownguide.org/basic-syntax/) File with ```.md``` file extension.
+
+## 📁 File names
+Put your content in appropriate file type having name as ```Your Title``` where ```Your Title``` can be the name of Data Structure/Algorithm or the title of Interview Questions & other types.
+
+Name should be in **Title Case** i.e. words should be separated by spaces & each word should have its first letter capitalized.
+
+## Other Contributions
+For other types of contributions, please create an issue first instead of a direct Pull Request.
+Contributions for improving documentation & web frontend are also encouraged.
+
+> ### Running web frontend locally:
+> The web frontend is built using [AstroJS](https://astro.build/) which is a Static Site Generator that uses JavaScript. For running locally, make sure you have [NodeJS](https://nodejs.org/) installed & run the following commands ```npm install``` and ```npm run dev```.
