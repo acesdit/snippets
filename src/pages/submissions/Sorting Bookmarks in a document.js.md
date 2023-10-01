@@ -7,7 +7,6 @@ title: Sorting Bookmarks in a document
 ---
 ```js
 function testBookMarkData() {
-
   // delete all current bookmarks
   DocumentApp.getActiveDocument().getBookmarks().forEach(function (b) {
     b.remove();
@@ -29,10 +28,7 @@ function testBookMarkData() {
   sortedBookMarks.forEach(function (b) {
     Logger.log(b.getId() + ':' + b.getPosition().getElement().asText().getText());
   });
-
-
 }
-
 
 function insertSomeBookMarks(searchItem) {
   // insert bookmarks for all the searchitems
