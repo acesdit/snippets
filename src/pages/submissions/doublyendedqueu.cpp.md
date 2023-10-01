@@ -1,6 +1,6 @@
 ---
 extension: cpp
-author: github-actions[bot]
+author: yashjawale
 category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
 title: doublyendedqueu

@@ -1,6 +1,6 @@
 ---
 extension: js
-author: github-actions[bot]
+author: yashjawale
 category: AppScript
 layout: '../../layouts/SubmissionLayout.astro'
 title: Sorting Bookmarks in a document

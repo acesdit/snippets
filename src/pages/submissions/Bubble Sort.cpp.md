@@ -1,6 +1,6 @@
 ---
 extension: cpp
-author: github-actions[bot]
+author: yashjawale
 category: Algorithms
 layout: '../../layouts/SubmissionLayout.astro'
 title: Bubble Sort

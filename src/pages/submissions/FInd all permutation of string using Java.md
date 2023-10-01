@@ -1,6 +1,6 @@
 ---
 extension: md
-author: github-actions[bot]
+author: yashjawale
 category: Interview Questions
 layout: '../../layouts/SubmissionLayout.astro'
 title: FInd all permutation of string using Java
