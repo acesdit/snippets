@@ -1,6 +1,6 @@
 ---
 extension: cpp
-author: Yash Jawale
+author: yashjawale
 category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
 title: test
@@ -14,4 +14,5 @@ int main(void)
   // This is a test filee
   cout << "\nThis is a test file.\n";
   return 0;
-}\n```
+}
+```

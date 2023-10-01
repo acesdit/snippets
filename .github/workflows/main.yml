@@ -24,7 +24,7 @@ jobs:
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
-                  author_username=$(git log -1 --format='%an' -- "$file")
+                  author_username=$(git log --reverse -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: Algorithms" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
@@ -55,7 +55,7 @@ jobs:
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
-                  author_username=$(git log -1 --format='%an' -- "$file")
+                  author_username=$(git log --reverse -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: Data Structures" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
@@ -86,7 +86,7 @@ jobs:
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
-                  author_username=$(git log -1 --format='%an' -- "$file")
+                  author_username=$(git log --reverse -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: AppScript" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
@@ -117,7 +117,7 @@ jobs:
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
-                  author_username=$(git log -1 --format='%an' -- "$file")
+                  author_username=$(git log --reverse -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: Bash" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
@@ -148,7 +148,7 @@ jobs:
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename_noext.md" # Add the extension
                   
                   # Get the author's username who committed the file
-                  author_username=$(git log -1 --format='%an' -- "$file")
+                  author_username=$(git log --reverse -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename_noext.md" # Add the author
                   echo "category: Interview Questions" >> "src/pages/submissions/$filename_noext.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename_noext.md"

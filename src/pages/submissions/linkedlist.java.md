@@ -1,6 +1,6 @@
 ---
 extension: java
-author: Yash Jawale
+author: AnushkaSao
 category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
 title: linkedlist
@@ -175,4 +175,5 @@ public class LL {
 
 
 
-}\n```
+}
+```

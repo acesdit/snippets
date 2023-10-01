@@ -1,5 +1,4 @@
-rm -f src/pages/submissions/*
-          for file in ALGORITHMS/*; do
+for file in DATA\ STRUCTURES/*; do
               if [ -f "$file" ]; then
                   filename=$(basename "$file")
                   filename_noext="${filename%.*}"
@@ -13,7 +12,7 @@ rm -f src/pages/submissions/*
                   # Get the author's username who committed the file
                   author_username=$(git log -1 --format='%an' -- "$file")
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
-                  echo "category: Algorithms" >> "src/pages/submissions/$filename.md"
+                  echo "category: Data Structures" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
