@@ -39,7 +39,7 @@ jobs:
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-                  echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
+                  echo "\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
         working-directory: ${{ github.workspace }}
@@ -68,7 +68,7 @@ jobs:
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-                  echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
+                  echo "\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
         working-directory: ${{ github.workspace }}
@@ -97,7 +97,7 @@ jobs:
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-                  echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
+                  echo "\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
         working-directory: ${{ github.workspace }}
@@ -126,7 +126,7 @@ jobs:
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-                  echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
+                  echo "\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
         working-directory: ${{ github.workspace }}

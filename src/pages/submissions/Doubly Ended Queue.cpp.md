@@ -93,5 +93,4 @@ int main()
     q.deque();    
     q.display();
 }
-
 ```
