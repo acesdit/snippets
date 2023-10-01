@@ -56,6 +56,7 @@ jobs:
                   
                   # Get the author's username who committed the file
                   author_username=$(git log --reverse -1 --format='%an' -- "$file")
+                  git log -- "$file"
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: Data Structures" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"

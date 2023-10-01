@@ -1,3 +1,4 @@
+rm src/pages/submissions/*
 for file in DATA\ STRUCTURES/*; do
               if [ -f "$file" ]; then
                   filename=$(basename "$file")
@@ -10,7 +11,8 @@ for file in DATA\ STRUCTURES/*; do
                   echo "extension: $file_extension" >> "src/pages/submissions/$filename.md" # Add the extension
                   
                   # Get the author's username who committed the file
-                  author_username=$(git log -1 --format='%an' -- "$file")
+                  author_username=$(git log --reverse --format='%an' -- "$file")
+                  git log -- "$file"
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: Data Structures" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
