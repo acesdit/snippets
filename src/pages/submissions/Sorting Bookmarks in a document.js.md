@@ -41,5 +41,4 @@ function insertSomeBookMarks(searchItem) {
     var bookMark = position.insertBookmark();
     rangeElement = body.findText(searchItem, rangeElement);
   }
-}
-```
+}```
