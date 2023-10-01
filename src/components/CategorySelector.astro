@@ -5,15 +5,15 @@ const currentPath = pathname.slice(1);
 ---
 
 <ul class="flex gap-2 pb-6 overflow-x-scroll">
-  {categories.map(category => <li class=""><a class={`${currentPath.includes(encodeURIComponent(category)) ? 'active' : 'inactive'} block text-sm px-4 py-2 rounded-lg whitespace-nowrap`} href={`/snippets/${category}`}>{category}</a></li>)}
+  {categories.map(category => <li class=""><a class={`${currentPath.includes(encodeURIComponent(category)) ? 'active' : 'inactive'} block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all`} href={`/snippets/${category}`}>{category}</a></li>)}
 </ul>
 
 <style>
   .active {
-    @apply bg-black text-white;
+    @apply bg-black hover:bg-[#434343] text-white;
 
   }
   .inactive {
-    @apply bg-[#C7BFB4];
+    @apply bg-[#C7BFB4] hover:bg-[#aca59c];
   }
 </style>
