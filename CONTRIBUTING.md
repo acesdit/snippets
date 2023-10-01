@@ -14,7 +14,7 @@ Add code file with ```.sh``` file extension & place it in ```BASH``` folder.
 Add code file with ```.gs``` file extension & place it in ```APPS SCRIPT``` folder.
 
 ## Adding Interview Questions
-Add the questions & answers to a single [Markdown](https://www.markdownguide.org/basic-syntax/) File with ```.md``` file extension.
+Add the questions & answers to a single [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) File with ```.md``` file extension.
 
 ## 📁 File names
 Put your content in appropriate file type having name as ```Your Title``` where ```Your Title``` can be the name of Data Structure/Algorithm or the title of Interview Questions & other types.
