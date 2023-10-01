@@ -16,8 +16,7 @@ jobs:
 
       - name: Generate MD Files for Algorithms
         run: |
-          rm -f src/pages/submissions/*.md
-          
+          rm -f src/pages/submissions/*
           for file in ALGORITHMS/*; do
               if [ -f "$file" ]; then
                   filename=$(basename "$file")
@@ -37,11 +36,9 @@ jobs:
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
                   echo "---" >> "src/pages/submissions/$filename.md"
-
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-
                   echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
@@ -62,17 +59,16 @@ jobs:
                   
                   # Get the author's username who committed the file
                   author_username=$(git log --reverse -1 --format='%an' -- "$file")
+                  git log -- "$file"
                   echo "author: $author_username" >> "src/pages/submissions/$filename.md" # Add the author
                   echo "category: Data Structures" >> "src/pages/submissions/$filename.md"
                   echo "layout: '../../layouts/SubmissionLayout.astro'" >> "src/pages/submissions/$filename.md"
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
                   echo "---" >> "src/pages/submissions/$filename.md"
-
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-
                   echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
@@ -99,11 +95,9 @@ jobs:
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
                   echo "---" >> "src/pages/submissions/$filename.md"
-
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-
                   echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
@@ -130,11 +124,9 @@ jobs:
                   echo "title: $filename_noext" >> "src/pages/submissions/$filename.md"
                   
                   echo "---" >> "src/pages/submissions/$filename.md"
-
                   echo "\`\`\`$file_extension" >> "src/pages/submissions/$filename.md"
                   
                   cat "$file" >> "src/pages/submissions/$filename.md"
-
                   echo "\n\`\`\`" >> "src/pages/submissions/$filename.md"
               fi
           done
@@ -171,11 +163,9 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add .
+          git add src/pages/submissions/*
           git commit -m "Generate MD files from code"
           git push
         working-directory: ${{ github.workspace }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-
