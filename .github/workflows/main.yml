@@ -14,9 +14,29 @@ jobs:
         with:
           fetch-depth: '0'
 
+      - name: Clear existing files
+        run: |
+          ls src/pages/submissions/
+          rm -f src/pages/submissions/*.md
+          echo "Removed"
+          ls src/pages/submissions/
+        working-directory: ${{ github.workspace }}
+
+      - name: Add commit for removal
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Removed previous files"
+          git push
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: '0'
+
       - name: Generate MD Files for Algorithms
         run: |
-          rm -f src/pages/submissions/*
           for file in ALGORITHMS/*; do
               if [ -f "$file" ]; then
                   filename=$(basename "$file")
