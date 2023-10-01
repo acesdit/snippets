@@ -3,7 +3,7 @@
 # ACES Snippets
 
 ![GitHub contributors](https://img.shields.io/github/contributors/acesdit/snippets)
-[![Pages Badge](https://img.shields.io/badge/View%20Website-aces.github.io/snippets-8A2BE2)](https://aces.github.io/snippets/)
+[![Pages Badge](https://img.shields.io/badge/View%20Website-aces.github.io/snippets-8A2BE2)](https://acesdit.github.io/snippets/)
 
 Collection of useful code snippets such as:
 - Implementation of ubiquitous ```Data Structures``` such as arrays, linked lists and hash maps.
