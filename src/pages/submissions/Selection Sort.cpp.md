@@ -54,5 +54,4 @@ int main()
   selectionSort(data, size);
   cout << "Sorted array in Acsending Order:\n";
   printArray(data, size);
-}
-```
+}```
