@@ -1,3 +1,11 @@
+---
+extension: cpp
+author: Omkar Vasekar
+category: Data Structures
+layout: '../../layouts/SubmissionLayout.astro'
+title: Doubly Ended Queue
+---
+```cpp
 #include <iostream>
 using namespace std;
 #define size 100
@@ -85,3 +93,4 @@ int main()
     q.deque();    
     q.display();
 }
+\n```
