@@ -1,6 +1,6 @@
 ---
 extension: java
-author: Yash Jawale
+author: github-actions[bot]
 category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
 title: linkedlist
