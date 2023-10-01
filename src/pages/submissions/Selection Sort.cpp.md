@@ -1,6 +1,6 @@
 ---
 extension: cpp
-author: Yash Jawale
+author: github-actions[bot]
 category: Algorithms
 layout: '../../layouts/SubmissionLayout.astro'
 title: Selection Sort
