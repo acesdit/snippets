@@ -16,28 +16,28 @@ Collection of useful code snippets such as:
         <a href="https://github.com/yashjawale">
             <img src="https://avatars.githubusercontent.com/u/63059729?v=4" width="100;" alt="yashjawale"/>
             <br />
-            <sub><b>Yash Jawale</b></sub>
+            <sub><b>yashjawale</b></sub>
         </a>
     </td>
     <td align="center">
         <a href="https://github.com/sahil-s-246">
             <img src="https://avatars.githubusercontent.com/u/97866494?v=4" width="100;" alt="sahil-s-246"/>
             <br />
-            <sub><b>Sahil Srinivas</b></sub>
+            <sub><b>sahil-s-246</b></sub>
         </a>
     </td>
     <td align="center">
         <a href="https://github.com/omkarvasekar">
             <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
             <br />
-            <sub><b>Omkar Vasekar</b></sub>
+            <sub><b>omkarvasekar</b></sub>
         </a>
     </td>
     <td align="center">
         <a href="https://github.com/AnushkaSao">
             <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
             <br />
-            <sub><b>Null</b></sub>
+            <sub><b>AnushkaSao</b></sub>
         </a>
     </td></tr>
 </table>
