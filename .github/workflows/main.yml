@@ -17,6 +17,7 @@ jobs:
       - name: Generate MD Files for Algorithms
         run: |
           rm -f src/pages/submissions/*.md
+          
           for file in ALGORITHMS/*; do
               if [ -f "$file" ]; then
                   filename=$(basename "$file")
