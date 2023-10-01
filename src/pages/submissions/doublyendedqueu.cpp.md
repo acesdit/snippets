@@ -1,6 +1,6 @@
 ---
 extension: cpp
-author: yashjawale
+author: omkarvasekar
 category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
 title: doublyendedqueu
