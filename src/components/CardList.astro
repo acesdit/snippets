@@ -8,7 +8,7 @@ const {list} = Astro.props
   {list.map(item => <Card href={item.url} title={item.frontmatter.title} author={item.frontmatter.author} extension={item.frontmatter.extension}/>)}
 </ul> 
 : 
-<div class="h-[60vh] w-full flex flex-col items-center justify-center">
+<div class="h-[50vh] w-full flex flex-col items-center justify-center">
   <div class="text-7xl pb-6">¯\_(ツ)_/¯</div>
   No entries yet
 </div>}
