@@ -9,29 +9,31 @@ const { frontmatter } = Astro.props
   <p class="lg:w-2/3 overflow-hidden rounded-tr-lg"></p>
   <!-- <p class="absolute top-0 right-0 bg-slate-600 p-3 text-sm text-white"></p> -->
   <script>
-    let copyButtonLabel = 'Copy Code'
-    let codeBlocks = Array.from(document.querySelectorAll('pre'))
+    function enableCopyButton() {
+      let copyButtonLabel = 'Copy Code'
+      let codeBlocks = Array.from(document.querySelectorAll('pre'))
 
-    for (let codeBlock of codeBlocks) {
-      let wrapper = document.createElement('div')
-      wrapper.style.position = 'relative'
-      wrapper.className = 'lg:w-2/3'
+      for (let codeBlock of codeBlocks) {
+        let wrapper = document.createElement('div')
+        wrapper.style.position = 'relative'
+        wrapper.className = 'lg:w-2/3'
 
-      let copyButton = document.createElement('button')
-      copyButton.className =
-        'copy-code absolute top-0 right-0 bg-slate-600 p-3 text-sm rounded-tr-lg rounded-bl-lg text-white'
-      copyButton.innerHTML = copyButtonLabel
+        let copyButton = document.createElement('button')
+        copyButton.className =
+          'copy-code absolute top-0 right-0 bg-slate-600 p-3 text-sm rounded-tr-lg rounded-bl-lg text-white'
+        copyButton.innerHTML = copyButtonLabel
 
-      codeBlock.setAttribute('tabindex', '0')
-      codeBlock.className = 'p-10 rounded-lg'
-      codeBlock.appendChild(copyButton)
-      // wrap codebock with relative parent element
-      codeBlock.parentNode.insertBefore(wrapper, codeBlock)
-      wrapper.appendChild(codeBlock)
+        codeBlock.setAttribute('tabindex', '0')
+        codeBlock.className = 'p-10 rounded-lg'
+        codeBlock.appendChild(copyButton)
+        // wrap codebock with relative parent element
+        codeBlock.parentNode.insertBefore(wrapper, codeBlock)
+        wrapper.appendChild(codeBlock)
 
-      copyButton.addEventListener('click', async () => {
-        await copyCode(codeBlock, copyButton)
-      })
+        copyButton.addEventListener('click', async () => {
+          await copyCode(codeBlock, copyButton)
+        })
+      }
     }
 
     async function copyCode(block, button) {
@@ -51,6 +53,8 @@ const { frontmatter } = Astro.props
         button.classList.toggle('text-[#00ff00]')
       }, 700)
     }
+
+    document.addEventListener('astro:after-swap', enableCopyButton);
   </script>
   <slot />
 </BaseLayout>
