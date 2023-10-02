@@ -13,4 +13,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "Thank you for working on this issue.Please go through the description in README.md and CONTRIBUTING.md first"
-        pr-message: "Thank you have for contributing, please ensure that your pr is in the correct format"
+        pr-message: "Seems like this is your first PR in this repository. Please ensure that your pr follows the guidelines and also make sure that you have gone through CONTRIBUTING.md"
