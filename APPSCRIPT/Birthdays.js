@@ -13,7 +13,6 @@ function myFunction() {
     date.setFullYear(now.getFullYear());
     calendar = CalendarApp.createAllDayEvent(`${file[i][1]}'s Birthday`,date);
     var id = calendar.getId();
-    // var emails=["pranavmehe14@gmail.com","sujalbagade123@gmail.com"]
-     
+    
   }
 } 
