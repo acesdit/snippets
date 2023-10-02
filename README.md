@@ -44,6 +44,20 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/JV-2701">
+            <img src="https://avatars.githubusercontent.com/u/120125232?v=4" width="100;" alt="JV-2701"/>
+            <br />
+            <sub><b>JV-2701</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/NishantK30">
+            <img src="https://avatars.githubusercontent.com/u/120248540?v=4" width="100;" alt="NishantK30"/>
+            <br />
+            <sub><b>NishantK30</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/AnushkaSao">
             <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
             <br />
