@@ -1,19 +1,76 @@
 ---
-const languages = ['Python', 'JavaScript', 'CPP', 'Java', 'Other'];
-const pathname = Astro.url.pathname;
-const currentPath = pathname.slice(1);
 ---
 
-<ul class="flex gap-2 pb-6 overflow-x-scroll">
-  {languages.map(language => <li class=""><a class={`${currentPath == ('snippets/' + encodeURIComponent(language)) ? 'active' : 'inactive'} block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all`} href={`/snippets/${language}`}>{language}</a></li>)}
-</ul>
+<div id="languages" class="flex gap-2 pb-6 overflow-x-scroll">
+</div>
 
-<style>
-  .active {
-    @apply bg-black hover:bg-[#434343] text-white;
+<script>
 
-  }
-  .inactive {
-    @apply bg-[#C7BFB4] hover:bg-[#aca59c];
+  const languages = [
+    {name: 'All', class: 'other'},
+    {name: 'Python', class: 'py'},
+    {name: 'Javascript', class: 'js'},
+    {name: 'C++', class: 'cpp'},
+    {name: 'Java', class: 'java'},
+  ]
+
+  var currentLanguage = "other"
+
+  const languages_list = document.getElementById('languages');
+
+  
+
+  languages.forEach((language) => {
+    const button = document.createElement('button');
+    button.className = 'bg-[#C7BFB4] hover:bg-[#aca59c] block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all language';
+    button.classList.add(language.class);
+    button.innerText = language.name;
+
+    if (language.class == 'other') {
+      button.classList.remove('bg-[#C7BFB4]');
+      button.classList.remove('hover:bg-[#aca59c]');
+      button.classList.add('bg-black');
+      button.classList.add('hover:bg-[#434343]');
+      button.classList.add('text-white');
+    }
+
+    button.addEventListener('click', () => {
+
+      var all_buttons = document.querySelectorAll('.language');
+      all_buttons.forEach((button) => {
+        if (currentLanguage != button.classList[10]) {
+          button.classList.remove('bg-black');
+          button.classList.remove('hover:bg-[#434343]');
+          button.classList.remove('text-white');
+          button.classList.add('bg-[#C7BFB4]');
+          button.classList.add('hover:bg-[#aca59c]');
+        }
+      })
+      currentLanguage = language.class;
+
+      button.classList.remove('bg-[#C7BFB4]');
+      button.classList.remove('hover:bg-[#aca59c]');
+      button.classList.add('bg-black');
+      button.classList.add('hover:bg-[#434343]');
+      button.classList.add('text-white');
+
+      var cards = document.querySelectorAll('.card');
+      cards.forEach((card) => {
+        if (currentLanguage != 'other' && card.classList[2] != currentLanguage) {
+          card.classList.add('language-hidden');
+        }
+        else {
+          card.classList.remove('language-hidden');
+        }
+      })
+
+    })
+    languages_list.appendChild(button);
+  })
+</script>
+
+<style is:global>
+  .language-hidden {
+    @apply hidden;
   }
 </style>

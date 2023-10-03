@@ -1,13 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-const { href, title, author, extension } = Astro.props;
+const { href, title, author, extension, category } = Astro.props;
 import pyImg from '../assets/py.svg'
 import jsImg from '../assets/js.svg'
 import cppImg from '../assets/cpp.svg'
 import javaImg from '../assets/java.svg'
 import other from '../assets/other.svg'
 
+let cat = category.toLowerCase().split(' ').join('');
+
+
 let img;
+let ext = extension;
 switch(extension) {
 	case 'cpp':
 		img = cppImg;
@@ -23,10 +27,11 @@ switch(extension) {
 		break;
 	default:
 		img = other;
+    ext = 'other';
 }
 ---
 
-<li>
+<li class={`card ${cat} ${ext}`}>
 	<a href={href} class="block bg-white p-6 rounded-lg border-solid border-2 border-black relative">
 		<h2 class="font-bold text-3xl pb-4 text-ellipsis md:truncate">
 			{title}
