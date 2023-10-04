@@ -9,7 +9,7 @@ const allPosts  = await Astro.glob('../pages/submissions/*.md')
 <BaseLayout title="ACES Snippets">
 	<main>
 		<CategorySelector/>
-		<!-- <LanguageSelector/> -->
+		<LanguageSelector/>
 		<CardList list={allPosts}/>
 	</main>
 </BaseLayout>

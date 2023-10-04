@@ -1,29 +1,19 @@
 ---
-const languages = ['All', 'Python', 'JavaScript', 'C++']
-const pathname = new URL(Astro.request.url).pathname;
+const languages = ['Python', 'JavaScript', 'CPP', 'Java', 'Other'];
+const pathname = Astro.url.pathname;
 const currentPath = pathname.slice(1);
 ---
 
-<h3>Languages: </h3>
-<ul class="flex gap-2 pb-6 pt-4 overflow-x-scroll">
-  {languages.map(category => <li><a  class={`text-sm bg-[#C7BFB4] px-4 py-2 rounded-lg whitespace-nowrap font-bold uppercase ${category}`} href="/snippets/">{category}</a></li>)}
+<ul class="flex gap-2 pb-6 overflow-x-scroll">
+  {languages.map(language => <li class=""><a class={`${currentPath == ('snippets/' + encodeURIComponent(language)) ? 'active' : 'inactive'} block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all`} href={`/snippets/${language}`}>{language}</a></li>)}
 </ul>
 
 <style>
-  .All {
-    color: white;
-    background: linear-gradient(120deg, #687ce4 20%, #ed8030 80%);
+  .active {
+    @apply bg-black hover:bg-[#434343] text-white;
+
   }
-  .Python {
-    color: white;
-    background: #306998;
-  }
-  .JavaScript {
-    color: black;
-    background: #f0db4f;
-  }
-  .C\+\+ {
-    color: white;
-    background: #00549e;
+  .inactive {
+    @apply bg-[#C7BFB4] hover:bg-[#aca59c];
   }
 </style>

@@ -1,6 +1,7 @@
 # Contribution Guide 📝
 
-Follow below guidelines for individual snippet types. Regardless of snippet type, be sure to follow the [**File name guidelines**](#📁-file-names)
+Follow below guidelines for individual snippet types. 
+> Regardless of snippet type, be sure to follow the [**FILE NAME GUIDELINES**](#📁-file-names)
 
 ## Adding Algorithms & Data Structures
 Create code file with appropriate file extension & place it in ```ALGORITHMS``` or ```DATA STRUCTURES``` folder.
