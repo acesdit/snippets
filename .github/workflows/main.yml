@@ -164,8 +164,7 @@ jobs:
           git config user.email "actions@github.com"
           git add .
           git commit -m "Generate MD files from code"
-          git pull
-          git push
+          git push --force
         working-directory: ${{ github.workspace }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
