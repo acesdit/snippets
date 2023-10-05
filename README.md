@@ -37,6 +37,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Nishantsurve">
+            <img src="https://avatars.githubusercontent.com/u/104264099?v=4" width="100;" alt="Nishantsurve"/>
+            <br />
+            <sub><b>Nishantsurve</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/omkarvasekar">
             <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
             <br />
@@ -56,15 +63,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>Pumang18</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/prakharpandey04">
             <img src="https://avatars.githubusercontent.com/u/95423165?v=4" width="100;" alt="prakharpandey04"/>
             <br />
             <sub><b>prakharpandey04</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/NishantK30">
             <img src="https://avatars.githubusercontent.com/u/120248540?v=4" width="100;" alt="NishantK30"/>
