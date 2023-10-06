@@ -1,11 +1,46 @@
 ---
+
 ---
 
-<nav class="container mx-auto flex justify-between items-center relative h-28 pl-4">
-  <a href="/snippets/" class="inline-block">
-    <img src="/snippets/logo.svg" alt="">
-  </a>
-  <a href="https://github.com/acesdit/snippets/" target="_blank" class="fixed z-20 top-0 right-0 w-32 md:w-auto">
-    <img src="/snippets/github-badge.svg" alt="GitHub">
+<nav
+  class="container mx-auto flex justify-between items-center relative h-28 pl-4"
+>
+  <div class="flex items-center sm:gap-6 flex-col sm:flex-row">
+    <a href="/snippets/" class="inline-block">
+      <img src="/snippets/logo.svg" alt="" />
+    </a>
+    <input
+      type="text"
+      id="searchBox"
+      value=""
+      placeholder="search for snippets"
+      class="text-base mb-5 sm:my-0 px-3 py-1 font-semibold placeholder:text-gray-400 placeholder:text-base rounded-lg focus:outline-none bg-inherit border-2 border-slate-600"
+    />
+  </div>
+  <a
+    href="https://github.com/acesdit/snippets/"
+    target="_blank"
+    class="fixed z-20 top-0 right-0 w-32 md:w-auto"
+  >
+    <img src="/snippets/github-badge.svg" alt="GitHub" />
   </a>
 </nav>
+
+<script>
+  let searchBox = document.querySelector<HTMLInputElement>("#searchBox");
+
+  searchBox.addEventListener("input", () => {
+
+    let key = searchBox.value
+    
+    console.log("searching");
+    let cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      if (card.querySelector("a h2").innerHTML.toLowerCase().includes(key.toLowerCase())) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+  });
+</script>
