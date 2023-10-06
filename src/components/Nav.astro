@@ -33,7 +33,6 @@
 
     let key = searchBox.value
     
-    console.log("searching");
     let cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
       if (card.querySelector("a h2").innerHTML.toLowerCase().includes(key.toLowerCase())) {
