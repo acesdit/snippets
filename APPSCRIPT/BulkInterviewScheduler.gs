@@ -38,13 +38,13 @@ function scheduleCalenderInterview() {
     var intervieweeCalendar = CalendarApp.getDefaultCalendar();
     Logger.log(intervieweeCalendar)
     var eventTitle = "<Company> Interview - "+ applicantName;
-    var eventInterviewee = intervieweeCalendar.createEvent(eventTitle, dateTime, dateTime, { location: "Online", description:message, guests: "intervier1@example.com, intervier3@example.com, intervier3@example.com" });
+    var eventInterviewee = intervieweeCalendar.createEvent(eventTitle, dateTime, dateTime, { location: "Online", description:message, guests: "interviewer1@example.com, interviewer2@example.com, interviewer3@example.com" });
 
     // Add the interviewee as a guest to the event
     eventInterviewee.addGuest(applicantEmail);
 
     // Send the interview invitation email
-    MailApp.sendEmail(applicantEmail, "<subject>", message,{name: "<Your Name aliase>"});
+    MailApp.sendEmail(applicantEmail, "<subject>", message,{name: "<Your Name alias>"});
     Logger.log("Interview scheduled for " + applicantName + " on " + date + " at " + time);
   }
 }
