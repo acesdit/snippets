@@ -15,5 +15,5 @@ jobs:
         with:
           use_username: true
           auto_detect_branch_protection: false
-          token: ${{ secrets.ACES_BOT }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           
