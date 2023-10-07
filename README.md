@@ -23,6 +23,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
 <table>
 <tr>
     <td align="center">
+        <a href="https://github.com/acesditbot">
+            <img src="https://avatars.githubusercontent.com/u/147253511?v=4" width="100;" alt="acesditbot"/>
+            <br />
+            <sub><b>acesditbot</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/yashjawale">
             <img src="https://avatars.githubusercontent.com/u/63059729?v=4" width="100;" alt="yashjawale"/>
             <br />
@@ -56,15 +63,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>omkarvasekar</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/JV-2701">
             <img src="https://avatars.githubusercontent.com/u/120125232?v=4" width="100;" alt="JV-2701"/>
             <br />
             <sub><b>JV-2701</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Pumang18">
             <img src="https://avatars.githubusercontent.com/u/112180951?v=4" width="100;" alt="Pumang18"/>
@@ -99,7 +106,8 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>AnushkaSao</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Vardhaman619">
             <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
