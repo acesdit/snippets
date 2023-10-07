@@ -80,6 +80,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Shreedhar03">
+            <img src="https://avatars.githubusercontent.com/u/114936376?v=4" width="100;" alt="Shreedhar03"/>
+            <br />
+            <sub><b>Shreedhar03</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/nnisarggada">
             <img src="https://avatars.githubusercontent.com/u/70348851?v=4" width="100;" alt="nnisarggada"/>
             <br />
