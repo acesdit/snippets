@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   contrib-readme-job:
@@ -16,5 +17,5 @@ jobs:
           use_username: true
           auto_detect_branch_protection: false
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACES_BOT_FULL }}
           
