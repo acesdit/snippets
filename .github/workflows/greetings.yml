@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/first-interaction@v1
       with:
-        repo-token: ${{ secrets.ACES_BOT_FULL }}
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "Thank you for working on this issue. Please go through the description in README.md and CONTRIBUTING.md first"
         pr-message: "Seems like this is your first PR in this repository. Please ensure that your PR follows the guidelines in CONTRIBUTING.md"
