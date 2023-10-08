@@ -128,13 +128,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>Vardhaman619</b></sub>
         </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/tanvibaviskar">
-            <img src="https://avatars.githubusercontent.com/u/145899846?v=4" width="100;" alt="tanvibaviskar"/>
-            <br />
-            <sub><b>tanvibaviskar</b></sub>
-        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
