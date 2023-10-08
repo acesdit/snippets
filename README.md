@@ -66,6 +66,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/pranavmm14">
+            <img src="https://avatars.githubusercontent.com/u/105978137?v=4" width="100;" alt="pranavmm14"/>
+            <br />
+            <sub><b>pranavmm14</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/JV-2701">
             <img src="https://avatars.githubusercontent.com/u/120125232?v=4" width="100;" alt="JV-2701"/>
             <br />
@@ -99,15 +106,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>nnisarggada</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/AnushkaSao">
             <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
             <br />
             <sub><b>AnushkaSao</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Vardhaman619">
             <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
