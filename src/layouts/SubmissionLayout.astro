@@ -3,57 +3,37 @@ import BaseLayout from './BaseLayout.astro'
 const { frontmatter } = Astro.props
 ---
 
-<BaseLayout title={frontmatter.title} transition:persist>
-  <h1 class="text-5xl font-bold pb-5">{frontmatter.title}</h1>
-  <p class="text-base pb-5">By {frontmatter.author}</p>
-  <p class="lg:w-2/3 overflow-hidden rounded-tr-lg"></p>
-  <script>
-    function enableCopyButton() {
-      let copyButtonLabel = 'Copy Code'
-      let codeBlocks = Array.from(document.querySelectorAll('pre'))
+<BaseLayout title={frontmatter.title} >
+    <div class="snippet-wrapper" >
+      <h1 class="text-5xl font-bold pb-5">{frontmatter.title}</h1>
+      <p class="text-base pb-5" style="font-size: 1.1rem;">By {frontmatter.author}</p>
+      <div class="code-wrapper pr-10" style="padding: 15px; background: #24292E; border-radius: 10px;
+      width: fit-content; min-width: 50vw; max-width: 90vw; font-size: 1rem; position: relative;
+      display: flex; flex-direction: row">
+        <slot />
+        <button class="copy-button" style="position:absolute; top: 0%; right: 0%;
+        padding: 10px; background: #3A434B; border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px ;color: aliceblue">
 
-      for (let codeBlock of codeBlocks) {
-        let wrapper = document.createElement('div')
-        wrapper.style.position = 'relative'
-        wrapper.className = 'lg:w-2/3'
+          Copy Code
+        </button>
+      </div>
 
-        let copyButton = document.createElement('button')
-        copyButton.className =
-          'copy-code absolute top-0 right-0 bg-slate-600 p-3 text-sm rounded-tr-lg rounded-bl-lg text-white'
-        copyButton.innerHTML = copyButtonLabel
-
-        codeBlock.setAttribute('tabindex', '0')
-        codeBlock.className = 'p-10 rounded-lg'
-        codeBlock.appendChild(copyButton)
-        // wrap codebock with relative parent element
-        codeBlock.parentNode.insertBefore(wrapper, codeBlock)
-        wrapper.appendChild(codeBlock)
-
-        copyButton.addEventListener('click', async () => {
-          await copyCode(codeBlock, copyButton)
-        })
-      }
-    }
-
-    async function copyCode(block, button) {
-      let code = block.querySelector('code')
-      let text = code.innerText
-
-      await navigator.clipboard.writeText(text)
-
-      // visual feedback that task is completed
-      button.innerText = 'Code Copied'
-      button.classList.toggle('text-[#00ff00]')
-      button.classList.toggle('text-white')
-
-      setTimeout(() => {
-        button.innerText = copyButtonLabel
-        button.classList.toggle('text-white')
-        button.classList.toggle('text-[#00ff00]')
-      }, 700)
-    }
-
-    document.addEventListener('astro:after-swap', enableCopyButton);
-  </script>
-  <slot />
+    </div>
 </BaseLayout>
+
+<script>
+  function copyCode() {
+    const codeWrapper = document.querySelector('.code-wrapper')
+    const code = codeWrapper.innerText;
+    navigator.clipboard.writeText(code);
+    const copyButton = document.querySelector('.copy-button');
+    copyButton.innerText = "Code Copied!";
+    setTimeout(() => {
+      copyButton.innerText = "Copy Code";
+    }, 1000)
+  }
+  
+  const copyButton = document.querySelector('.copy-button');
+  copyButton.addEventListener('click', copyCode);
+</script>

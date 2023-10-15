@@ -50,8 +50,7 @@ import Footer from '../components/Footer.astro';
 <link rel="apple-touch-startup-image" href="/snippets/icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 		<link rel="manifest" href="/snippets/manifest.webmanifest">
 		<script id="vite-plugin-pwa:register-sw" src="/snippets/registerSW.js" />
-
-		<ViewTransitions />
+	<!--<ViewTransitions/>-->
 	</head>
 	<body class="flex flex-col min-h-screen">
 		<Nav />
@@ -59,7 +58,8 @@ import Footer from '../components/Footer.astro';
 			<slot />
 		</div>
 		<Footer />
-	</body><style is:global>
+	</body>
+	<style is:global>
 		html {
 			font-family: system-ui, sans-serif;
 			background: #fcf5eb;
