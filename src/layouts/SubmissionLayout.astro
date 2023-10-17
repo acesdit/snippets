@@ -4,8 +4,8 @@ const { frontmatter } = Astro.props
 ---
 
 <BaseLayout title={frontmatter.title} transition:persist>
-  <h1 class="text-5xl font-bold pb-5">{frontmatter.title}</h1>
-  <p class="text-base pb-5">By {frontmatter.author}</p>
+  <h1 class="text-5xl font-bold pb-5 dark:text-white">{frontmatter.title}</h1>
+  <p class="text-base pb-5 dark:text-slate-300">By {frontmatter.author}</p>
   <p class="lg:w-2/3 overflow-hidden rounded-tr-lg"></p>
   <script>
     function enableCopyButton() {
