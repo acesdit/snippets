@@ -51,20 +51,27 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/omkarvasekar">
+            <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
+            <br />
+            <sub><b>omkarvasekar</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Shreedhar03">
+            <img src="https://avatars.githubusercontent.com/u/114936376?v=4" width="100;" alt="Shreedhar03"/>
+            <br />
+            <sub><b>Shreedhar03</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/prakharpandey04">
             <img src="https://avatars.githubusercontent.com/u/95423165?v=4" width="100;" alt="prakharpandey04"/>
             <br />
             <sub><b>prakharpandey04</b></sub>
         </a>
     </td>
-    <td align="center">
-        <a href="https://github.com/omkarvasekar">
-            <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
-            <br />
-            <sub><b>omkarvasekar</b></sub>
-        </a>
-    </td></tr>
-<tr>
     <td align="center">
         <a href="https://github.com/tedante">
             <img src="https://avatars.githubusercontent.com/u/23611745?v=4" width="100;" alt="tedante"/>
@@ -98,13 +105,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/120248540?v=4" width="100;" alt="NishantK30"/>
             <br />
             <sub><b>NishantK30</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Shreedhar03">
-            <img src="https://avatars.githubusercontent.com/u/114936376?v=4" width="100;" alt="Shreedhar03"/>
-            <br />
-            <sub><b>Shreedhar03</b></sub>
         </a>
     </td></tr>
 <tr>
