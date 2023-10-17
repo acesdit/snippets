@@ -32,11 +32,11 @@ switch(extension) {
 ---
 
 <li class={`card ${cat} ${ext}`}>
-	<a href={href} class="block bg-white p-6 rounded-lg border-solid border-2 border-black relative">
-		<h2 class="font-bold text-3xl pb-4 text-ellipsis md:truncate">
+	<a href={href} class="block bg-white dark:bg-slate-700 dark:border-slate-100 dark:border-0 p-6 rounded-lg border-solid border-2 border-black relative ">
+		<h2 class="font-bold dark:text-white text-3xl pb-4 text-ellipsis md:truncate">
 			{title}
 		</h2>
-		<p>
+		<p class="dark:text-slate-300">
 			By {author}
 		</p>
 		<Image src={img} class="w-6 h-6 absolute bottom-3 right-3" alt="Language Icon" />
