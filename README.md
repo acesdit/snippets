@@ -73,6 +73,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Pumang18">
+            <img src="https://avatars.githubusercontent.com/u/112180951?v=4" width="100;" alt="Pumang18"/>
+            <br />
+            <sub><b>Pumang18</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/tedante">
             <img src="https://avatars.githubusercontent.com/u/23611745?v=4" width="100;" alt="tedante"/>
             <br />
@@ -84,13 +91,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/105978137?v=4" width="100;" alt="pranavmm14"/>
             <br />
             <sub><b>pranavmm14</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Pumang18">
-            <img src="https://avatars.githubusercontent.com/u/112180951?v=4" width="100;" alt="Pumang18"/>
-            <br />
-            <sub><b>Pumang18</b></sub>
         </a>
     </td>
     <td align="center">
