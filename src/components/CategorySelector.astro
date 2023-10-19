@@ -1,89 +1,96 @@
 ---
+
 ---
 
-
-<div id="categories" class="flex gap-2 pb-6 overflow-x-scroll">
-</div>
+<div id="categories" class="flex gap-2 pb-6 overflow-x-scroll"></div>
 <script>
-  const categories = [
-    {
-      name: 'All',
-      class: 'all'
-    },
-    {
-      name: 'AppScript',
-      class: 'appscript'
-    },
-    {
-      name: 'Data Structures',
-      class: 'datastructures'
-    },
-    {
-      name: 'Algorithms',
-      class: 'algorithms'
-    },
-    {
-      name: 'Bash',
-      class: 'bash'
-    },
-    {
-      name: 'Interview Questions',
-      class: 'interviewquestions'
-    }
-  ]
+  function categoryFilter() {
+    const categories = [
+      {
+        name: 'All',
+        class: 'all',
+      },
+      {
+        name: 'AppScript',
+        class: 'appscript',
+      },
+      {
+        name: 'Data Structures',
+        class: 'datastructures',
+      },
+      {
+        name: 'Algorithms',
+        class: 'algorithms',
+      },
+      {
+        name: 'Bash',
+        class: 'bash',
+      },
+      {
+        name: 'Interview Questions',
+        class: 'interviewquestions',
+      },
+    ]
 
-  var currentCategory = "all"
+    var currentCategory = 'all'
 
-  const categories_list = document.getElementById('categories');
+    const categories_list = document.getElementById('categories')
 
-  
+    categories.forEach((category) => {
+      const button = document.createElement('button')
+      button.className =
+        'bg-[#C7BFB4] hover:bg-[#aca59c] block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all category'
+      button.classList.add(category.class)
+      button.innerText = category.name
 
-  categories.forEach((category) => {
-    const button = document.createElement('button');
-    button.className = 'bg-[#C7BFB4] hover:bg-[#aca59c] block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all category';
-    button.classList.add(category.class);
-    button.innerText = category.name;
+      if (category.class == 'all') {
+        button.classList.remove('bg-[#C7BFB4]')
+        button.classList.remove('hover:bg-[#aca59c]')
+        button.classList.add('bg-black')
+        button.classList.add('hover:bg-[#434343]')
+        button.classList.add('text-white')
+      }
 
-    if (category.class == 'all') {
-      button.classList.remove('bg-[#C7BFB4]');
-      button.classList.remove('hover:bg-[#aca59c]');
-      button.classList.add('bg-black');
-      button.classList.add('hover:bg-[#434343]');
-      button.classList.add('text-white');
-    }
+      button.addEventListener('click', () => {
+        var all_buttons = document.querySelectorAll('.category')
+        all_buttons.forEach((button) => {
+          if (currentCategory != button.classList[10]) {
+            button.classList.remove('bg-black')
+            button.classList.remove('hover:bg-[#434343]')
+            button.classList.remove('text-white')
+            button.classList.add('bg-[#C7BFB4]')
+            button.classList.add('hover:bg-[#aca59c]')
+          }
+        })
+        currentCategory = category.class
 
-    button.addEventListener('click', () => {
+        button.classList.remove('bg-[#C7BFB4]')
+        button.classList.remove('hover:bg-[#aca59c]')
+        button.classList.add('bg-black')
+        button.classList.add('hover:bg-[#434343]')
+        button.classList.add('text-white')
 
-      var all_buttons = document.querySelectorAll('.category');
-      all_buttons.forEach((button) => {
-        if (currentCategory != button.classList[10]) {
-          button.classList.remove('bg-black');
-          button.classList.remove('hover:bg-[#434343]');
-          button.classList.remove('text-white');
-          button.classList.add('bg-[#C7BFB4]');
-          button.classList.add('hover:bg-[#aca59c]');
-        }
+        var cards = document.querySelectorAll('.card')
+        cards.forEach((card) => {
+          if (
+            currentCategory != 'all' &&
+            card.classList[1] != currentCategory
+          ) {
+            card.classList.add('category-hidden')
+          } else {
+            card.classList.remove('category-hidden')
+          }
+        })
       })
-      currentCategory = category.class;
-
-      button.classList.remove('bg-[#C7BFB4]');
-      button.classList.remove('hover:bg-[#aca59c]');
-      button.classList.add('bg-black');
-      button.classList.add('hover:bg-[#434343]');
-      button.classList.add('text-white');
-
-      var cards = document.querySelectorAll('.card');
-      cards.forEach((card) => {
-        if (currentCategory != 'all' && card.classList[1] != currentCategory) {
-          card.classList.add('category-hidden');
-        }
-        else {
-          card.classList.remove('category-hidden');
-        }
-      })
-
+      categories_list.appendChild(button)
     })
-    categories_list.appendChild(button);
+  }
+  // document.addEventListener('astro:after-swap', categoryFilter)
+  document.addEventListener('astro:page-load', () => {
+    console.log("RAN")
+    if (window.location.pathname === '/snippets/') {
+      categoryFilter()
+    }
   })
 </script>
 

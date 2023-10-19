@@ -8,8 +8,8 @@ const { frontmatter } = Astro.props
   <p class="text-base pb-5 dark:text-slate-300">By {frontmatter.author}</p>
   <p class="lg:w-2/3 overflow-hidden rounded-tr-lg"></p>
   <script>
+    let copyButtonLabel = 'Copy Code'
     function enableCopyButton() {
-      let copyButtonLabel = 'Copy Code'
       let codeBlocks = Array.from(document.querySelectorAll('pre'))
 
       for (let codeBlock of codeBlocks) {
@@ -53,7 +53,7 @@ const { frontmatter } = Astro.props
       }, 700)
     }
 
-    document.addEventListener('astro:after-swap', enableCopyButton);
+    document.addEventListener('astro:after-swap', enableCopyButton)
   </script>
   <slot />
 </BaseLayout>
