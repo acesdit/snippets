@@ -123,6 +123,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/SarveshRasal">
+            <img src="https://avatars.githubusercontent.com/u/124485985?v=4" width="100;" alt="SarveshRasal"/>
+            <br />
+            <sub><b>SarveshRasal</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Vardhaman619">
             <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
             <br />
