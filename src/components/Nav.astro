@@ -14,36 +14,35 @@
       id="searchBox"
       value=""
       placeholder="search for snippets"
-      class="text-base text-white  mb-5 sm:my-0 px-3 py-1 font-semibold placeholder:text-gray-400 placeholder:text-base rounded-lg focus:outline-none bg-inherit border-2 border-slate-600"
+      class="text-base text-white mb-5 sm:my-0 px-3 py-1 font-semibold placeholder:text-gray-400 placeholder:text-base rounded-lg focus:outline-none bg-inherit border-2 border-slate-600"
     />
-
   </div>
 
-
-    <a
+  <a
     href="https://github.com/acesdit/snippets/"
     target="_blank"
-    class="fixed z-20 top-0 right-0 w-32 md:w-auto">
+    class="fixed z-20 top-0 right-0 w-32 md:w-auto"
+  >
     <img src="/snippets/github-badge.svg" alt="GitHub" />
   </a>
-  
-  
 </nav>
 
 <script>
-  let searchBox = document.querySelector<HTMLInputElement>("#searchBox");
-
-  searchBox.addEventListener("input", () => {
-
+  let searchBox = document.querySelector<HTMLInputElement>('#searchBox')
+  searchBox.addEventListener('input', () => {
     let key = searchBox.value
-    
-    let cards = document.querySelectorAll(".card");
+    let cards = document.querySelectorAll('.card')
     cards.forEach((card) => {
-      if (card.querySelector("a h2").innerHTML.toLowerCase().includes(key.toLowerCase())) {
-        card.classList.remove("hidden");
+      if (
+        card
+          .querySelector('a h2')
+          .innerHTML.toLowerCase()
+          .includes(key.toLowerCase())
+      ) {
+        card.classList.remove('hidden')
       } else {
-        card.classList.add("hidden");
+        card.classList.add('hidden')
       }
-    });
-  });
+    })
+  })
 </script>
