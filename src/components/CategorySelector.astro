@@ -52,13 +52,13 @@ const categories = [
 </style>
 
 <script>
+  function setCategory() {
   let categories = document.querySelectorAll('.category')
   categories.forEach((category) =>
     category.addEventListener('click', (e) => {
       filterByCategory(e)
     })
   )
-
   function filterByCategory(e) {
     // Filtering cards
     let cards = document.querySelectorAll('.card')
@@ -85,5 +85,6 @@ const categories = [
         category.classList.remove('inactive-button')
       }
     })
-  }
+  }}
+  document.addEventListener('astro:page-load', setCategory);
 </script>
