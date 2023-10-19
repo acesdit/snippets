@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 const manifest = {
   name: "ACES Snippets",
   short_name: "ACES Snippets",
-  start_url: "/",
+  start_url: "/snippets/",
   description: "Collection of useful code snippets",
   icons: [
     {
