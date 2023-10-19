@@ -50,31 +50,30 @@ import Footer from '../components/Footer.astro';
 <link rel="apple-touch-startup-image" href="/snippets/icons/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
 		<link rel="manifest" href="/snippets/manifest.webmanifest">
 		<script id="vite-plugin-pwa:register-sw" src="/snippets/registerSW.js" />
-		<ViewTransitions />
+	<!--<ViewTransitions/>-->
 	</head>
 	<body class="flex flex-col min-h-screen">
 		<Nav/>
 		<div class="container mx-auto mb-auto pb-24 px-4">
 			<slot />
 		</div>
-		<Footer/>
+		<Footer />
 	</body>
-</html>
-<style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		/* background: #FCF5EB; */
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
-</style>
+	<style is:global>
+		html {
+			font-family: system-ui, sans-serif;
+			background: #fcf5eb;
+			background-size: 224px;
+		}
+		code {
+			font-family:
+				Menlo,
+				Monaco,
+				Lucida Console,
+				Liberation Mono,
+				DejaVu Sans Mono,
+				Bitstream Vera Sans Mono,
+				Courier New,
+				monospace;
+		}
+	</style>
