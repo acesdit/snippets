@@ -53,7 +53,7 @@ const { frontmatter } = Astro.props
       }, 700)
     }
 
-    document.addEventListener('astro:after-swap', enableCopyButton)
+    document.addEventListener('astro:page-load', enableCopyButton)
   </script>
   <slot />
 </BaseLayout>
