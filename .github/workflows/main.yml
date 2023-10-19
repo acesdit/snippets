@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   generate_md_files:
@@ -160,11 +161,11 @@ jobs:
 
       - name: Commit and Push MD Files
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "ACES Bot"
+          git config user.email "147253511+acesditbot@users.noreply.github.com"
           git add .
           git commit -m "Generate MD files from code"
-          git push
+          git push --force
         working-directory: ${{ github.workspace }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

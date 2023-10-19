@@ -1,19 +1,93 @@
 ---
-const categories = ['AppScript', 'Data Structures', 'Algorithms', 'Bash', 'Interview Questions']
-const pathname = Astro.url.pathname;
-const currentPath = pathname.slice(1);
+const categories = [
+  {
+    name: 'All',
+    class: 'all',
+  },
+  {
+    name: 'AppScript',
+    class: 'appscript',
+  },
+  {
+    name: 'Data Structures',
+    class: 'datastructures',
+  },
+  {
+    name: 'Algorithms',
+    class: 'algorithms',
+  },
+  {
+    name: 'Bash',
+    class: 'bash',
+  },
+  {
+    name: 'Interview Questions',
+    class: 'interviewquestions',
+  },
+]
 ---
 
-<ul class="flex gap-2 pb-6 overflow-x-scroll">
-  {categories.map(category => <li class=""><a class={`${currentPath.includes(encodeURIComponent(category)) ? 'active' : 'inactive'} block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all`} href={`/snippets/${category}`}>{category}</a></li>)}
-</ul>
-
-<style>
-  .active {
-    @apply bg-black hover:bg-[#434343] text-white;
-
+<div id="categories" class="flex gap-2 pb-6 overflow-x-scroll">
+  {
+    categories.map((category) => (
+      <button
+        class={`block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all category ${
+          category.class
+        } ${category.class == 'all' ? 'active-category' : 'inactive-category'}`}
+        data-classname={category.class}
+      >
+        {category.name}
+      </button>
+    ))
   }
-  .inactive {
+</div>
+
+<style is:global>
+  .active-category {
+    @apply bg-black hover:bg-[#434343] text-white;
+  }
+  .inactive-category {
     @apply bg-[#C7BFB4] hover:bg-[#aca59c];
   }
+  .category-hidden {
+    @apply hidden;
+  }
 </style>
+
+<script>
+  function setCategory() {
+  let categories = document.querySelectorAll('.category')
+  categories.forEach((category) =>
+    category.addEventListener('click', (e) => {
+      filterByCategory(e)
+    })
+  )
+  function filterByCategory(e) {
+    // Filtering cards
+    let cards = document.querySelectorAll('.card')
+    let currentCategory = e.target.dataset.classname
+    cards.forEach((card) => {
+      if (
+        currentCategory != 'all' &&
+        !card.classList.contains(currentCategory)
+      ) {
+        card.classList.add('category-hidden')
+      } else {
+        card.classList.remove('category-hidden')
+      }
+    })
+
+    // Update buttons
+    let buttons = document.querySelectorAll('.category')
+    buttons.forEach((category) => {
+      if (category.dataset.classname != currentCategory) {
+        category.classList.remove('active-category')
+        category.classList.add('inactive-category')
+      } else {
+        category.classList.add('active-category')
+        category.classList.remove('inactive-category')
+      }
+    })
+  }}
+  document.addEventListener('astro:page-load', setCategory);
+</script>

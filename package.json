@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.0.0",
-    "astro": "^3.1.1",
+    "astro": "^3.2.4",
     "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "@vite-pwa/astro": "^0.1.3"
   }
 }

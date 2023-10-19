@@ -5,11 +5,11 @@ const {list} = Astro.props
 
 {list.length > 0 ? 
 <ul role="list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-  {list.map(item => <Card href={item.url} title={item.frontmatter.title} author={item.frontmatter.author} extension={item.frontmatter.extension}/>)}
+  {list.map(item => <Card href={item.url} title={item.frontmatter.title} author={item.frontmatter.author} extension={item.frontmatter.extension} category={item.frontmatter.category}/>)}
 </ul> 
 : 
-<div class="h-[50vh] w-full flex flex-col items-center justify-center">
-  <div class="text-7xl pb-6">¯\_(ツ)_/¯</div>
+<div class="h-[50vh] w-full flex flex-col items-center justify-center dark:text-white">
+  <div class="text-7xl pb-6 dark:text-white">¯\_(ツ)_/¯</div>
   No entries yet
 </div>}
 
