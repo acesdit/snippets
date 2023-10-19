@@ -116,6 +116,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/acesditadmin">
+            <img src="https://avatars.githubusercontent.com/u/90958832?v=4" width="100;" alt="acesditadmin"/>
+            <br />
+            <sub><b>acesditadmin</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/AnushkaSao">
             <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
             <br />
