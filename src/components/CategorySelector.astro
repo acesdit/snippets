@@ -34,6 +34,7 @@ const categories = [
         class={`block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all category ${
           category.class
         } ${category.class == 'all' ? 'active-button' : 'inactive-button'}`}
+        data-classname={category.class}
       >
         {category.name}
       </button>
@@ -49,3 +50,40 @@ const categories = [
     @apply bg-[#C7BFB4] hover:bg-[#aca59c];
   }
 </style>
+
+<script>
+  let categories = document.querySelectorAll('.category')
+  categories.forEach((category) =>
+    category.addEventListener('click', (e) => {
+      filterByCategory(e)
+    })
+  )
+
+  function filterByCategory(e) {
+    // Filtering cards
+    let cards = document.querySelectorAll('.card')
+    let currentCategory = e.target.dataset.classname
+    cards.forEach((card) => {
+      if (
+        currentCategory != 'all' &&
+        !card.classList.contains(currentCategory)
+      ) {
+        card.classList.add('hidden')
+      } else {
+        card.classList.remove('hidden')
+      }
+    })
+
+    // Update buttons
+    let buttons = document.querySelectorAll('.category')
+    buttons.forEach((category) => {
+      if (category.dataset.classname != currentCategory) {
+        category.classList.remove('active-button')
+        category.classList.add('inactive-button')
+      } else {
+        category.classList.add('active-button')
+        category.classList.remove('inactive-button')
+      }
+    })
+  }
+</script>

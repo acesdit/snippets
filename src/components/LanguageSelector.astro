@@ -10,13 +10,13 @@ const languages = [
 
 <div id="languages" class="flex gap-2 pb-6 overflow-x-scroll">
   {
-    languages.map((category) => (
+    languages.map((language) => (
       <button
-        class={`block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all category ${
-          category.class
-        } ${category.class == 'other' ? 'active-button' : 'inactive-button'}`}
+        class={`block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all language ${
+          language.class
+        } ${language.class == 'other' ? 'active-button' : 'inactive-button'}`}
       >
-        {category.name}
+        {language.name}
       </button>
     ))
   }
