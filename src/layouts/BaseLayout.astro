@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-[#FCF5EB] dark:bg-[#212323] ">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Collection of code snippets" />
@@ -14,7 +14,7 @@ import Footer from '../components/Footer.astro';
 		<link rel="icon" type="image/svg+xml" href="/snippets/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<link rel="apple-touch-icon" href="/snippets/icons/apple-icon-180.png">
+<link rel="apple-touch-icon" href="/snippets/icons/apple-icon-180.png">
 
 <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -53,7 +53,7 @@ import Footer from '../components/Footer.astro';
 	<!--<ViewTransitions/>-->
 	</head>
 	<body class="flex flex-col min-h-screen">
-		<Nav />
+		<Nav/>
 		<div class="container mx-auto mb-auto pb-24 px-4">
 			<slot />
 		</div>
@@ -77,4 +77,3 @@ import Footer from '../components/Footer.astro';
 				monospace;
 		}
 	</style>
-</html>
