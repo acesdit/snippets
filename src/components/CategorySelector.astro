@@ -33,7 +33,7 @@ const categories = [
       <button
         class={`block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all category ${
           category.class
-        } ${category.class == 'all' ? 'active-button' : 'inactive-button'}`}
+        } ${category.class == 'all' ? 'active-category' : 'inactive-category'}`}
         data-classname={category.class}
       >
         {category.name}
@@ -43,11 +43,14 @@ const categories = [
 </div>
 
 <style is:global>
-  .active-button {
+  .active-category {
     @apply bg-black hover:bg-[#434343] text-white;
   }
-  .inactive-button {
+  .inactive-category {
     @apply bg-[#C7BFB4] hover:bg-[#aca59c];
+  }
+  .category-hidden {
+    @apply hidden;
   }
 </style>
 
@@ -68,9 +71,9 @@ const categories = [
         currentCategory != 'all' &&
         !card.classList.contains(currentCategory)
       ) {
-        card.classList.add('hidden')
+        card.classList.add('category-hidden')
       } else {
-        card.classList.remove('hidden')
+        card.classList.remove('category-hidden')
       }
     })
 
@@ -78,11 +81,11 @@ const categories = [
     let buttons = document.querySelectorAll('.category')
     buttons.forEach((category) => {
       if (category.dataset.classname != currentCategory) {
-        category.classList.remove('active-button')
-        category.classList.add('inactive-button')
+        category.classList.remove('active-category')
+        category.classList.add('inactive-category')
       } else {
-        category.classList.add('active-button')
-        category.classList.remove('inactive-button')
+        category.classList.add('active-category')
+        category.classList.remove('inactive-category')
       }
     })
   }}

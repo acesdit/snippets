@@ -14,7 +14,8 @@ const languages = [
       <button
         class={`block text-sm px-4 py-2 rounded-lg whitespace-nowrap transition-all language ${
           language.class
-        } ${language.class == 'other' ? 'active-button' : 'inactive-button'}`}
+        } ${language.class == 'other' ? 'active-language' : 'inactive-language'}`}
+        data-language={language.class}
       >
         {language.name}
       </button>
@@ -22,3 +23,52 @@ const languages = [
   }
 </div>
 
+<style is:global >
+  .language-hidden {
+    @apply hidden;
+  }
+  .active-language {
+    @apply bg-black hover:bg-[#434343] text-white;
+  }
+  .inactive-language {
+    @apply bg-[#C7BFB4] hover:bg-[#aca59c];
+  }
+</style>
+
+<script>
+  function setLanguages() {
+  let categories = document.querySelectorAll('.language')
+  categories.forEach((category) =>
+    category.addEventListener('click', (e) => {
+      filterByCategory(e)
+    })
+  )
+  function filterByCategory(e) {
+    // Filtering cards
+    let cards = document.querySelectorAll('.card')
+    let currentLanguage = e.target.dataset.language
+    cards.forEach((card) => {
+      if (
+        currentLanguage != 'other' &&
+        !card.classList.contains(currentLanguage)
+      ) {
+        card.classList.add('language-hidden')
+      } else {
+        card.classList.remove('language-hidden')
+      }
+    })
+
+    // Update buttons
+    let buttons = document.querySelectorAll('.language')
+    buttons.forEach((category) => {
+      if (category.dataset.language != currentLanguage) {
+        category.classList.remove('active-language')
+        category.classList.add('inactive-language')
+      } else {
+        category.classList.add('active-language')
+        category.classList.remove('inactive-language')
+      }
+    })
+  }}
+  document.addEventListener('astro:page-load', setLanguages);
+</script>
