@@ -109,6 +109,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/tanvibaviskar">
+            <img src="https://avatars.githubusercontent.com/u/145899846?v=4" width="100;" alt="tanvibaviskar"/>
+            <br />
+            <sub><b>tanvibaviskar</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/NishantK30">
             <img src="https://avatars.githubusercontent.com/u/120248540?v=4" width="100;" alt="NishantK30"/>
             <br />
@@ -141,13 +148,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
             <br />
             <sub><b>Vardhaman619</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/tanvibaviskar">
-            <img src="https://avatars.githubusercontent.com/u/145899846?v=4" width="100;" alt="tanvibaviskar"/>
-            <br />
-            <sub><b>tanvibaviskar</b></sub>
         </a>
     </td></tr>
 </table>
