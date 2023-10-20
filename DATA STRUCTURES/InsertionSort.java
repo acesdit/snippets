@@ -1,7 +1,7 @@
 import java.util.*;
 //Insertion sorting Time complexity O(n^2)
 //making sorted and unsorted two parts of array then placing elements from unsorted to sorted array at its right position
-public class Sorting3Insertion{
+public class InsertionSort{
 
     public static void insertionsort(int arr[]){
         for(int i=0; i<arr.length;i++){

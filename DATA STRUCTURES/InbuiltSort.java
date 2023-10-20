@@ -1,7 +1,7 @@
 import java.util.*;
 //Using java.util.Collections library
 //Time complexity for sorting is O(n log n)
-public class Sorting4Inbuilt{
+public class InbuiltSort{
     public static void main(String args[]){
         Integer arr[]={3, 5, 2, 9, 6};
         //Arrays.sort(arr);

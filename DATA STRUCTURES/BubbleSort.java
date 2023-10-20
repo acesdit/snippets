@@ -1,7 +1,7 @@
 import java.util.*;
 //Bubble sorting Time complexity O(n) Swapping elements from first index to its next upto end of an array
 
-public class Sorting1Bubble{
+public class BubbleSort{
 
     public static void bubblesort(int arr[]){
         for(int turn=0; turn< arr.length; turn++){

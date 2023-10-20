@@ -1,7 +1,7 @@
 import java.util.*;
 // Selection sort selecting min value and swapping with the first index
 
-public class Sorting2Selection{
+public class SelectionSort{
 
     public static void selectionsort(int arr[]){
         for(int i=0; i<arr.length-1; i++){
