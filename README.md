@@ -80,6 +80,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/acesditadmin">
+            <img src="https://avatars.githubusercontent.com/u/90958832?v=4" width="100;" alt="acesditadmin"/>
+            <br />
+            <sub><b>acesditadmin</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/tedante">
             <img src="https://avatars.githubusercontent.com/u/23611745?v=4" width="100;" alt="tedante"/>
             <br />
@@ -99,27 +106,20 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>JV-2701</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/NishantK30">
             <img src="https://avatars.githubusercontent.com/u/120248540?v=4" width="100;" alt="NishantK30"/>
             <br />
             <sub><b>NishantK30</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/nnisarggada">
             <img src="https://avatars.githubusercontent.com/u/70348851?v=4" width="100;" alt="nnisarggada"/>
             <br />
             <sub><b>nnisarggada</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/acesditadmin">
-            <img src="https://avatars.githubusercontent.com/u/90958832?v=4" width="100;" alt="acesditadmin"/>
-            <br />
-            <sub><b>acesditadmin</b></sub>
         </a>
     </td>
     <td align="center">
