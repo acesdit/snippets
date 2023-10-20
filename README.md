@@ -23,6 +23,11 @@ We are open to new additions and suggestions. Contribute by adding more snippets
 <table>
 <tr>
     <td align="center">
+        <a href="https://github.com/vaibhaviDixit">
+            <img src="https://avatars.githubusercontent.com/u/88642745?v=4" width="100;" alt="vaibhaviDixit"/>
+            <br />
+            <sub><b>vaibhaviDixit</b></sub>
+
         <a href="https://github.com/acesditbot">
             <img src="https://avatars.githubusercontent.com/u/147253511?v=4" width="100;" alt="acesditbot"/>
             <br />
@@ -78,7 +83,8 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>Pumang18</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/acesditadmin">
             <img src="https://avatars.githubusercontent.com/u/90958832?v=4" width="100;" alt="acesditadmin"/>
@@ -93,6 +99,7 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <sub><b>tedante</b></sub>
         </a>
     </td>
+
     <td align="center">
         <a href="https://github.com/pranavmm14">
             <img src="https://avatars.githubusercontent.com/u/105978137?v=4" width="100;" alt="pranavmm14"/>
