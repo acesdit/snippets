@@ -37,6 +37,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/omkarvasekar">
+            <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
+            <br />
+            <sub><b>omkarvasekar</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Nishantsurve">
             <img src="https://avatars.githubusercontent.com/u/104264099?v=4" width="100;" alt="Nishantsurve"/>
             <br />
@@ -48,13 +55,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/97866494?v=4" width="100;" alt="sahil-s-246"/>
             <br />
             <sub><b>sahil-s-246</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/omkarvasekar">
-            <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
-            <br />
-            <sub><b>omkarvasekar</b></sub>
         </a>
     </td>
     <td align="center">
@@ -144,13 +144,20 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/AnkurSalunkhe11">
+            <img src="https://avatars.githubusercontent.com/u/110984132?v=4" width="100;" alt="AnkurSalunkhe11"/>
+            <br />
+            <sub><b>AnkurSalunkhe11</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/AnushkaSao">
             <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
             <br />
             <sub><b>AnushkaSao</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/SarveshRasal">
             <img src="https://avatars.githubusercontent.com/u/124485985?v=4" width="100;" alt="SarveshRasal"/>
