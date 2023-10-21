@@ -1,7 +1,7 @@
 // C++ code to print BFS traversal from a given
 // source vertex
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 // This class represents a directed graph using
@@ -15,8 +15,8 @@ class Graph {
 	vector<list<int> > adj;
 
 public:
-	// Constructor
-	Graph(int V);
+	
+	Graph(int V); // Constructor
 
 	// Function to add an edge to graph
 	void addEdge(int v, int w);
