@@ -94,10 +94,10 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/tedante">
-            <img src="https://avatars.githubusercontent.com/u/23611745?v=4" width="100;" alt="tedante"/>
+        <a href="https://github.com/AnkurSalunkhe11">
+            <img src="https://avatars.githubusercontent.com/u/110984132?v=4" width="100;" alt="AnkurSalunkhe11"/>
             <br />
-            <sub><b>tedante</b></sub>
+            <sub><b>AnkurSalunkhe11</b></sub>
         </a>
     </td>
     <td align="center">
@@ -108,6 +108,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td></tr>
 <tr>
+    <td align="center">
+        <a href="https://github.com/tedante">
+            <img src="https://avatars.githubusercontent.com/u/23611745?v=4" width="100;" alt="tedante"/>
+            <br />
+            <sub><b>tedante</b></sub>
+        </a>
+    </td>
     <td align="center">
         <a href="https://github.com/pranavmm14">
             <img src="https://avatars.githubusercontent.com/u/105978137?v=4" width="100;" alt="pranavmm14"/>
@@ -141,13 +148,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/70348851?v=4" width="100;" alt="nnisarggada"/>
             <br />
             <sub><b>nnisarggada</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/AnkurSalunkhe11">
-            <img src="https://avatars.githubusercontent.com/u/110984132?v=4" width="100;" alt="AnkurSalunkhe11"/>
-            <br />
-            <sub><b>AnkurSalunkhe11</b></sub>
         </a>
     </td></tr>
 <tr>
