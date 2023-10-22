@@ -171,13 +171,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>Vardhaman619</b></sub>
         </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/nikhil730">
-            <img src="https://avatars.githubusercontent.com/u/79016958?v=4" width="100;" alt="nikhil730"/>
-            <br />
-            <sub><b>nikhil730</b></sub>
-        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
