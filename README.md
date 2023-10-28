@@ -101,20 +101,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/JV-2701">
-            <img src="https://avatars.githubusercontent.com/u/120125232?v=4" width="100;" alt="JV-2701"/>
-            <br />
-            <sub><b>JV-2701</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
         <a href="https://github.com/nikhil730">
             <img src="https://avatars.githubusercontent.com/u/79016958?v=4" width="100;" alt="nikhil730"/>
             <br />
             <sub><b>nikhil730</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/tanvibaviskar">
             <img src="https://avatars.githubusercontent.com/u/145899846?v=4" width="100;" alt="tanvibaviskar"/>
@@ -134,6 +127,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/105978137?v=4" width="100;" alt="pranavmm14"/>
             <br />
             <sub><b>pranavmm14</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/JV-2701">
+            <img src="https://avatars.githubusercontent.com/u/120125232?v=4" width="100;" alt="JV-2701"/>
+            <br />
+            <sub><b>JV-2701</b></sub>
         </a>
     </td>
     <td align="center">
