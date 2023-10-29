@@ -37,17 +37,17 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/omkarvasekar">
-            <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
-            <br />
-            <sub><b>omkarvasekar</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/sahil-s-246">
             <img src="https://avatars.githubusercontent.com/u/97866494?v=4" width="100;" alt="sahil-s-246"/>
             <br />
             <sub><b>sahil-s-246</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/omkarvasekar">
+            <img src="https://avatars.githubusercontent.com/u/125749197?v=4" width="100;" alt="omkarvasekar"/>
+            <br />
+            <sub><b>omkarvasekar</b></sub>
         </a>
     </td>
     <td align="center">
