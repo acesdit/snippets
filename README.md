@@ -173,6 +173,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/anishashinde2507">
+            <img src="https://avatars.githubusercontent.com/u/124612206?v=4" width="100;" alt="anishashinde2507"/>
+            <br />
+            <sub><b>anishashinde2507</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/AnushkaSao">
             <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
             <br />
@@ -185,7 +192,8 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>SarveshRasal</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/ivahbavi">
             <img src="https://avatars.githubusercontent.com/u/143157340?v=4" width="100;" alt="ivahbavi"/>
