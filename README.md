@@ -152,6 +152,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/SujalBagade">
+            <img src="https://avatars.githubusercontent.com/u/107856489?v=4" width="100;" alt="SujalBagade"/>
+            <br />
+            <sub><b>SujalBagade</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/vaibhaviDixit">
             <img src="https://avatars.githubusercontent.com/u/88642745?v=4" width="100;" alt="vaibhaviDixit"/>
             <br />
@@ -170,13 +177,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/120248540?v=4" width="100;" alt="NishantK30"/>
             <br />
             <sub><b>NishantK30</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/SujalBagade">
-            <img src="https://avatars.githubusercontent.com/u/107856489?v=4" width="100;" alt="SujalBagade"/>
-            <br />
-            <sub><b>SujalBagade</b></sub>
         </a>
     </td>
     <td align="center">
