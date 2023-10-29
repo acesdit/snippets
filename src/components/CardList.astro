@@ -4,7 +4,7 @@ const {list} = Astro.props
 ---
 
 {list.length > 0 ? 
-<ul role="list" class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+<ul role="list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
   {list.map(item => <Card href={item.url} title={item.frontmatter.title} author={item.frontmatter.author} extension={item.frontmatter.extension} category={item.frontmatter.category}/>)}
 </ul> 
 : 
