@@ -173,13 +173,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/SujalBagade">
-            <img src="https://avatars.githubusercontent.com/u/107856489?v=4" width="100;" alt="SujalBagade"/>
-            <br />
-            <sub><b>SujalBagade</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Vardhaman619">
             <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
             <br />
@@ -192,15 +185,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>akshaybade13</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/nnisarggada">
             <img src="https://avatars.githubusercontent.com/u/70348851?v=4" width="100;" alt="nnisarggada"/>
             <br />
             <sub><b>nnisarggada</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/anishashinde2507">
             <img src="https://avatars.githubusercontent.com/u/124612206?v=4" width="100;" alt="anishashinde2507"/>
