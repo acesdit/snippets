@@ -196,11 +196,11 @@ import Footer from "../components/Footer.astro";
           Courier New,
           monospace;
       }
-      ::-webkit-scrollbar {
+      .no-scrollbar::-webkit-scrollbar {
         display: none;
       }
       @-moz-document url-prefix() {
-        * {
+        .no-scrollbar {
           scrollbar-width: none;
         }
       }
