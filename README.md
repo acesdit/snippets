@@ -87,6 +87,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Atharva-Morankar-09">
+            <img src="https://avatars.githubusercontent.com/u/90545519?v=4" width="100;" alt="Atharva-Morankar-09"/>
+            <br />
+            <sub><b>Atharva-Morankar-09</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Pumang18">
             <img src="https://avatars.githubusercontent.com/u/112180951?v=4" width="100;" alt="Pumang18"/>
             <br />
@@ -99,20 +106,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>prakharpandey04</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/acesditadmin">
             <img src="https://avatars.githubusercontent.com/u/90958832?v=4" width="100;" alt="acesditadmin"/>
             <br />
             <sub><b>acesditadmin</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
-        <a href="https://github.com/Atharva-Morankar-09">
-            <img src="https://avatars.githubusercontent.com/u/90545519?v=4" width="100;" alt="Atharva-Morankar-09"/>
-            <br />
-            <sub><b>Atharva-Morankar-09</b></sub>
         </a>
     </td>
     <td align="center">
