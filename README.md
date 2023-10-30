@@ -152,13 +152,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/kirtiagarwal06">
-            <img src="https://avatars.githubusercontent.com/u/131999976?v=4" width="100;" alt="kirtiagarwal06"/>
-            <br />
-            <sub><b>kirtiagarwal06</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/pranavmm14">
             <img src="https://avatars.githubusercontent.com/u/105978137?v=4" width="100;" alt="pranavmm14"/>
             <br />
@@ -184,6 +177,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/88642745?v=4" width="100;" alt="vaibhaviDixit"/>
             <br />
             <sub><b>vaibhaviDixit</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/kirtiagarwal06">
+            <img src="https://avatars.githubusercontent.com/u/131999976?v=4" width="100;" alt="kirtiagarwal06"/>
+            <br />
+            <sub><b>kirtiagarwal06</b></sub>
         </a>
     </td>
     <td align="center">
