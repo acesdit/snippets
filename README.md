@@ -66,6 +66,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/Shreedhar03">
+            <img src="https://avatars.githubusercontent.com/u/114936376?v=4" width="100;" alt="Shreedhar03"/>
+            <br />
+            <sub><b>Shreedhar03</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ivahbavi">
             <img src="https://avatars.githubusercontent.com/u/143157340?v=4" width="100;" alt="ivahbavi"/>
             <br />
@@ -84,13 +91,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/112180951?v=4" width="100;" alt="Pumang18"/>
             <br />
             <sub><b>Pumang18</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Shreedhar03">
-            <img src="https://avatars.githubusercontent.com/u/114936376?v=4" width="100;" alt="Shreedhar03"/>
-            <br />
-            <sub><b>Shreedhar03</b></sub>
         </a>
     </td>
     <td align="center">
