@@ -1,12 +1,12 @@
 ---
 extension: cpp
-author: Pranjal Choria
+author: PratKakade
 category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
 title: BackTracking_concept_Standard_questions
 ---
 ```cpp
-//    _____ALL STANDARD BACKTACKING PROBLEM SOLUTIONS   ___
+//    _____ALL STANDARD BACKTRACKING PROBLEM SOLUTIONS___
 //  SUBSETS...
 // https://leetcode.com/problems/subsets
 
