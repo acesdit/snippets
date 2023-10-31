@@ -250,6 +250,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>SarveshRasal</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/ShrutiMare">
+            <img src="https://avatars.githubusercontent.com/u/134821909?v=4" width="100;" alt="ShrutiMare"/>
+            <br />
+            <sub><b>ShrutiMare</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
