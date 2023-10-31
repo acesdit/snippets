@@ -130,6 +130,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/atharvaparab9160">
+            <img src="https://avatars.githubusercontent.com/u/116532157?v=4" width="100;" alt="atharvaparab9160"/>
+            <br />
+            <sub><b>atharvaparab9160</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/nikhil730">
             <img src="https://avatars.githubusercontent.com/u/79016958?v=4" width="100;" alt="nikhil730"/>
             <br />
@@ -142,15 +149,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>tanvibaviskar</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/pranjal369">
             <img src="https://avatars.githubusercontent.com/u/78440907?v=4" width="100;" alt="pranjal369"/>
             <br />
             <sub><b>pranjal369</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/tedante">
             <img src="https://avatars.githubusercontent.com/u/23611745?v=4" width="100;" alt="tedante"/>
@@ -185,15 +192,22 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>SujalBagade</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/vaibhaviDixit">
             <img src="https://avatars.githubusercontent.com/u/88642745?v=4" width="100;" alt="vaibhaviDixit"/>
             <br />
             <sub><b>vaibhaviDixit</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Vardhaman619">
+            <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
+            <br />
+            <sub><b>Vardhaman619</b></sub>
+        </a>
+    </td>
     <td align="center">
         <a href="https://github.com/AdityaPawar6174">
             <img src="https://avatars.githubusercontent.com/u/145215840?v=4" width="100;" alt="AdityaPawar6174"/>
@@ -221,12 +235,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>rudra1ghosh</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
-        <a href="https://github.com/Vardhaman619">
-            <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
+        <a href="https://github.com/ShrutiMare">
+            <img src="https://avatars.githubusercontent.com/u/134821909?v=4" width="100;" alt="ShrutiMare"/>
             <br />
-            <sub><b>Vardhaman619</b></sub>
+            <sub><b>ShrutiMare</b></sub>
         </a>
     </td>
     <td align="center">
@@ -234,14 +249,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/128242158?v=4" width="100;" alt="akshaybade13"/>
             <br />
             <sub><b>akshaybade13</b></sub>
-        </a>
-    </td></tr>
-<tr>
-    <td align="center">
-        <a href="https://github.com/atharvaparab9160">
-            <img src="https://avatars.githubusercontent.com/u/116532157?v=4" width="100;" alt="atharvaparab9160"/>
-            <br />
-            <sub><b>atharvaparab9160</b></sub>
         </a>
     </td>
     <td align="center">
@@ -263,13 +270,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/124485985?v=4" width="100;" alt="SarveshRasal"/>
             <br />
             <sub><b>SarveshRasal</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/ShrutiMare">
-            <img src="https://avatars.githubusercontent.com/u/134821909?v=4" width="100;" alt="ShrutiMare"/>
-            <br />
-            <sub><b>ShrutiMare</b></sub>
         </a>
     </td></tr>
 </table>
