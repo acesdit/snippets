@@ -6,7 +6,7 @@ import Footer from "../components/Footer.astro";
 ---
 
 <!doctype html>
-<html lang="en" class="bg-[#FCF5EB] dark:bg-[#212323]">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Collection of code snippets" />
@@ -173,7 +173,7 @@ import Footer from "../components/Footer.astro";
     ></script>
     <ViewTransitions />
   </head>
-  <body class="flex flex-col min-h-screen" transition:persist>
+  <body class="flex flex-col min-h-screen bg-[#FCF5EB] dark:bg-[#212323]" transition:persist>
     <Nav />
     <div class="container mx-auto mb-auto pb-24 px-4">
       <slot />
