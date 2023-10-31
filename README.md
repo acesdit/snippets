@@ -223,27 +223,20 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/rudra1ghosh">
-            <img src="https://avatars.githubusercontent.com/u/134212273?v=4" width="100;" alt="rudra1ghosh"/>
-            <br />
-            <sub><b>rudra1ghosh</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/Vardhaman619">
             <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
             <br />
             <sub><b>Vardhaman619</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/akshaybade13">
             <img src="https://avatars.githubusercontent.com/u/128242158?v=4" width="100;" alt="akshaybade13"/>
             <br />
             <sub><b>akshaybade13</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/nnisarggada">
             <img src="https://avatars.githubusercontent.com/u/70348851?v=4" width="100;" alt="nnisarggada"/>
