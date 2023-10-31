@@ -264,6 +264,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>ShrutiMare</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/atharvaparab9160">
+            <img src="https://avatars.githubusercontent.com/u/116532157?v=4" width="100;" alt="atharvaparab9160"/>
+            <br />
+            <sub><b>atharvaparab9160</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
