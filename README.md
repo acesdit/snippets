@@ -230,13 +230,20 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/mrical">
+            <img src="https://avatars.githubusercontent.com/u/60258119?v=4" width="100;" alt="mrical"/>
+            <br />
+            <sub><b>mrical</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/NishantK30">
             <img src="https://avatars.githubusercontent.com/u/120248540?v=4" width="100;" alt="NishantK30"/>
             <br />
             <sub><b>NishantK30</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/rudra1ghosh">
             <img src="https://avatars.githubusercontent.com/u/134212273?v=4" width="100;" alt="rudra1ghosh"/>
@@ -263,13 +270,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/141952829?v=4" width="100;" alt="AnushkaSao"/>
             <br />
             <sub><b>AnushkaSao</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/mrical">
-            <img src="https://avatars.githubusercontent.com/u/60258119?v=4" width="100;" alt="mrical"/>
-            <br />
-            <sub><b>mrical</b></sub>
         </a>
     </td>
     <td align="center">
