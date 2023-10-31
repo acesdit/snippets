@@ -1,9 +1,10 @@
 ---
+import ThemeToogler from "./ThemeToogler.astro"
 
 ---
 
 <nav
-  class="container mx-auto flex justify-between items-center relative h-28 pl-4"
+  class="container mx-auto flex justify-between items-center relative h-28 pl-4 pr-28"
 >
   <div class="flex items-center sm:gap-6 flex-col sm:flex-row">
     <a href="/snippets/" class="inline-block z-10">
@@ -18,6 +19,7 @@
     />
   </div>
 
+  <ThemeToogler/>
   <a
     href="https://github.com/acesdit/snippets/"
     target="_blank"
@@ -25,6 +27,7 @@
   >
     <img src="/snippets/github-badge.svg" alt="GitHub" />
   </a>
+
 </nav>
 
 <script>
