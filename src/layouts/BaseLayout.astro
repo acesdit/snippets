@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions";
 const { title } = Astro.props;
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
@@ -171,7 +170,6 @@ import Footer from "../components/Footer.astro";
     <link rel="manifest" href="/snippets/manifest.webmanifest" />
     <script id="vite-plugin-pwa:register-sw" src="/snippets/registerSW.js"
     ></script>
-    <ViewTransitions />
   </head>
   <body class="flex flex-col min-h-screen bg-[#FCF5EB] dark:bg-[#212323]" transition:persist>
     <Nav />
