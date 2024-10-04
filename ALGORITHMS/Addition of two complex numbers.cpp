@@ -17,6 +17,6 @@ int main(){
    struct complexnum c = sumcomplex(a, b);
    printf("Complex number 1: %d + i%d", a.real, a.img);
    printf("Complex number 2: %d + i%d", b.real, b.img);
-   printf("Sum of the complex numbers: %d + i%d", c.real, c.img); //added my docs
+   printf("Sum of the complex numbers: %d + i%d", c.real, c.img);
    return 0;
 }
