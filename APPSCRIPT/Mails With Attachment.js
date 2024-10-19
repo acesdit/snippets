@@ -1,3 +1,12 @@
+// This Google Apps Script automates the process of sending emails with attachments from Google Sheets and Google Drive. It retrieves email addresses and names from a specific Google Sheet, constructs a custom email message, and attaches a file from Google Drive to each email. Here’s a breakdown of the script:
+
+// 	•	Spreadsheet Access: The script opens the specified Google Sheet by its ID and fetches the data from a designated range.
+// 	•	File Attachment: A file from Google Drive is retrieved using its unique file ID and converted to a Blob object for attachment.
+// 	•	Email Sending: For each row in the sheet, it sends a personalized email with the specified subject, body, and attachment using the GmailApp.sendEmail function.
+
+// This script helps streamline bulk email communication with attachments, making it useful for sending documents like invitations, certificates, or personalized messages.
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 function sendEmails() {
     var spreadsheetId = "sheet-id";
     // var sheetId = "your-sheet-id";
