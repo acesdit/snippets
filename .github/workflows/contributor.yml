@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to automate contrib in readme
     steps:
+      - uses: actions/checkout@v3
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
