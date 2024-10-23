@@ -34,7 +34,7 @@ int main()
     cout<<vec.size()<<endl;  // size of the vector
     cout<<vec.capacity()<<endl;   // Total Capacity of vector
 // Iterating over elements
-    cout<<"VECTORS ELEMNTS: ";
+    cout<<"VECTORS ELEMENTS: ";
     for(int i=0;i<vec.size(); i++)
     {
         cout<<vec[i]<<" ";
