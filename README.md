@@ -331,13 +331,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Soham-2">
-            <img src="https://avatars.githubusercontent.com/u/180564342?v=4" width="100;" alt="Soham-2"/>
-            <br />
-            <sub><b>Soham-2</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/VedantGitthub">
             <img src="https://avatars.githubusercontent.com/u/137814820?v=4" width="100;" alt="VedantGitthub"/>
             <br />
