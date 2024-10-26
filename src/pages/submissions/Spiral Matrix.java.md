@@ -1,9 +1,9 @@
 ---
 extension: java
-author: infinityshru27
+author: yashcodes29
 category: Data Structures
 layout: '../../layouts/SubmissionLayout.astro'
-title: Exercise18
+title: Spiral Matrix
 ---
 ```java
 import java.util.Scanner;
