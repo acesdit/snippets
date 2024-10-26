@@ -137,10 +137,10 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/ShaziaKhateeb">
-            <img src="https://avatars.githubusercontent.com/u/147310301?v=4" width="100;" alt="ShaziaKhateeb"/>
+        <a href="https://github.com/PratKakade">
+            <img src="https://avatars.githubusercontent.com/u/101464490?v=4" width="100;" alt="PratKakade"/>
             <br />
-            <sub><b>ShaziaKhateeb</b></sub>
+            <sub><b>PratKakade</b></sub>
         </a>
     </td>
     <td align="center">
@@ -152,31 +152,24 @@ We are open to new additions and suggestions. Contribute by adding more snippets
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/PratKakade">
-            <img src="https://avatars.githubusercontent.com/u/101464490?v=4" width="100;" alt="PratKakade"/>
+        <a href="https://github.com/ShaziaKhateeb">
+            <img src="https://avatars.githubusercontent.com/u/147310301?v=4" width="100;" alt="ShaziaKhateeb"/>
             <br />
-            <sub><b>PratKakade</b></sub>
+            <sub><b>ShaziaKhateeb</b></sub>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/acesditadmin">
-            <img src="https://avatars.githubusercontent.com/u/90958832?v=4" width="100;" alt="acesditadmin"/>
+        <a href="https://github.com/tanvibaviskar">
+            <img src="https://avatars.githubusercontent.com/u/145899846?v=4" width="100;" alt="tanvibaviskar"/>
             <br />
-            <sub><b>acesditadmin</b></sub>
+            <sub><b>tanvibaviskar</b></sub>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/DipeshC1707">
-            <img src="https://avatars.githubusercontent.com/u/112754484?v=4" width="100;" alt="DipeshC1707"/>
+        <a href="https://github.com/nikhil730">
+            <img src="https://avatars.githubusercontent.com/u/79016958?v=4" width="100;" alt="nikhil730"/>
             <br />
-            <sub><b>DipeshC1707</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/JV-2701">
-            <img src="https://avatars.githubusercontent.com/u/120125232?v=4" width="100;" alt="JV-2701"/>
-            <br />
-            <sub><b>JV-2701</b></sub>
+            <sub><b>nikhil730</b></sub>
         </a>
     </td>
     <td align="center">
@@ -187,18 +180,25 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/nikhil730">
-            <img src="https://avatars.githubusercontent.com/u/79016958?v=4" width="100;" alt="nikhil730"/>
+        <a href="https://github.com/JV-2701">
+            <img src="https://avatars.githubusercontent.com/u/120125232?v=4" width="100;" alt="JV-2701"/>
             <br />
-            <sub><b>nikhil730</b></sub>
+            <sub><b>JV-2701</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/DipeshC1707">
+            <img src="https://avatars.githubusercontent.com/u/112754484?v=4" width="100;" alt="DipeshC1707"/>
+            <br />
+            <sub><b>DipeshC1707</b></sub>
         </a>
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/tanvibaviskar">
-            <img src="https://avatars.githubusercontent.com/u/145899846?v=4" width="100;" alt="tanvibaviskar"/>
+        <a href="https://github.com/acesditadmin">
+            <img src="https://avatars.githubusercontent.com/u/90958832?v=4" width="100;" alt="acesditadmin"/>
             <br />
-            <sub><b>tanvibaviskar</b></sub>
+            <sub><b>acesditadmin</b></sub>
         </a>
     </td>
     <td align="center">
@@ -216,10 +216,10 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/infinityshru27">
-            <img src="https://avatars.githubusercontent.com/u/176791623?v=4" width="100;" alt="infinityshru27"/>
+        <a href="https://github.com/pranavmm14">
+            <img src="https://avatars.githubusercontent.com/u/105978137?v=4" width="100;" alt="pranavmm14"/>
             <br />
-            <sub><b>infinityshru27</b></sub>
+            <sub><b>pranavmm14</b></sub>
         </a>
     </td>
     <td align="center">
@@ -281,6 +281,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/infinityshru27">
+            <img src="https://avatars.githubusercontent.com/u/176791623?v=4" width="100;" alt="infinityshru27"/>
+            <br />
+            <sub><b>infinityshru27</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/akshaybade13">
             <img src="https://avatars.githubusercontent.com/u/128242158?v=4" width="100;" alt="akshaybade13"/>
             <br />
@@ -314,15 +321,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>NishantK30</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/uppy19d0">
             <img src="https://avatars.githubusercontent.com/u/51054204?v=4" width="100;" alt="uppy19d0"/>
             <br />
             <sub><b>uppy19d0</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/LEARNER1432">
             <img src="https://avatars.githubusercontent.com/u/145311546?v=4" width="100;" alt="LEARNER1432"/>
@@ -357,7 +364,8 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>SarveshRasal</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/VedantGitthub">
             <img src="https://avatars.githubusercontent.com/u/137814820?v=4" width="100;" alt="VedantGitthub"/>
