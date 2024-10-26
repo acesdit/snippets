@@ -415,6 +415,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>shri-915</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/tanushri-bhawar">
+            <img src="https://avatars.githubusercontent.com/u/180107188?v=4" width="100;" alt="tanushri-bhawar"/>
+            <br />
+            <sub><b>tanushri-bhawar</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
