@@ -230,32 +230,18 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Vardhaman619">
-            <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
+        <a href="https://github.com/mrical">
+            <img src="https://avatars.githubusercontent.com/u/60258119?v=4" width="100;" alt="mrical"/>
             <br />
-            <sub><b>Vardhaman619</b></sub>
+            <sub><b>mrical</b></sub>
         </a>
     </td></tr>
 <tr>
     <td align="center">
-        <a href="https://github.com/sejalnarkhede">
-            <img src="https://avatars.githubusercontent.com/u/179904553?v=4" width="100;" alt="sejalnarkhede"/>
+        <a href="https://github.com/Ocidemus">
+            <img src="https://avatars.githubusercontent.com/u/101312204?v=4" width="100;" alt="Ocidemus"/>
             <br />
-            <sub><b>sejalnarkhede</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/vaibhaviDixit">
-            <img src="https://avatars.githubusercontent.com/u/88642745?v=4" width="100;" alt="vaibhaviDixit"/>
-            <br />
-            <sub><b>vaibhaviDixit</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Tejas-Santosh-Nalawade">
-            <img src="https://avatars.githubusercontent.com/u/89332752?v=4" width="100;" alt="Tejas-Santosh-Nalawade"/>
-            <br />
-            <sub><b>Tejas-Santosh-Nalawade</b></sub>
+            <sub><b>Ocidemus</b></sub>
         </a>
     </td>
     <td align="center">
@@ -266,25 +252,24 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/Ocidemus">
-            <img src="https://avatars.githubusercontent.com/u/101312204?v=4" width="100;" alt="Ocidemus"/>
+        <a href="https://github.com/Tejas-Santosh-Nalawade">
+            <img src="https://avatars.githubusercontent.com/u/89332752?v=4" width="100;" alt="Tejas-Santosh-Nalawade"/>
             <br />
-            <sub><b>Ocidemus</b></sub>
+            <sub><b>Tejas-Santosh-Nalawade</b></sub>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/mrical">
-            <img src="https://avatars.githubusercontent.com/u/60258119?v=4" width="100;" alt="mrical"/>
+        <a href="https://github.com/vaibhaviDixit">
+            <img src="https://avatars.githubusercontent.com/u/88642745?v=4" width="100;" alt="vaibhaviDixit"/>
             <br />
-            <sub><b>mrical</b></sub>
+            <sub><b>vaibhaviDixit</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
-        <a href="https://github.com/Shubhamchavan15">
-            <img src="https://avatars.githubusercontent.com/u/153620992?v=4" width="100;" alt="Shubhamchavan15"/>
+        <a href="https://github.com/sejalnarkhede">
+            <img src="https://avatars.githubusercontent.com/u/179904553?v=4" width="100;" alt="sejalnarkhede"/>
             <br />
-            <sub><b>Shubhamchavan15</b></sub>
+            <sub><b>sejalnarkhede</b></sub>
         </a>
     </td>
     <td align="center">
@@ -292,6 +277,21 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/158430651?v=4" width="100;" alt="Ashwini-955"/>
             <br />
             <sub><b>Ashwini-955</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
+        <a href="https://github.com/Vardhaman619">
+            <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
+            <br />
+            <sub><b>Vardhaman619</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/Shubhamchavan15">
+            <img src="https://avatars.githubusercontent.com/u/153620992?v=4" width="100;" alt="Shubhamchavan15"/>
+            <br />
+            <sub><b>Shubhamchavan15</b></sub>
         </a>
     </td>
     <td align="center">
