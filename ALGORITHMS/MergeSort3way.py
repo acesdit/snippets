@@ -140,4 +140,3 @@ data = mergeSort3Way(data, 10)
 print("After 3 way merge sort: ", end="")
 for i in range(10):
 	print(f"{data[i]} ", end="")
-
