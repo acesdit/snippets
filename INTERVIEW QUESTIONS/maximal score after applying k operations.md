@@ -21,8 +21,6 @@ Apply the operation to each array element exactly once. The final score is 10 + 
 
 ## Example 2:
 
-![A Directed graph with 3 nodes](https://assets.leetcode.com/uploads/2024/07/18/graph-3.png)
-
 ### Input: nums = [1,10,3,3,3], k = 3
 
 ### Output: 17
