@@ -130,6 +130,13 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/atharvaparab9160">
+            <img src="https://avatars.githubusercontent.com/u/116532157?v=4" width="100;" alt="atharvaparab9160"/>
+            <br />
+            <sub><b>atharvaparab9160</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/anishashinde2507">
             <img src="https://avatars.githubusercontent.com/u/124612206?v=4" width="100;" alt="anishashinde2507"/>
             <br />
@@ -141,13 +148,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/101464490?v=4" width="100;" alt="PratKakade"/>
             <br />
             <sub><b>PratKakade</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/atharvaparab9160">
-            <img src="https://avatars.githubusercontent.com/u/116532157?v=4" width="100;" alt="atharvaparab9160"/>
-            <br />
-            <sub><b>atharvaparab9160</b></sub>
         </a>
     </td></tr>
 <tr>
