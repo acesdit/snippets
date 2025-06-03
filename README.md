@@ -266,20 +266,27 @@ We are open to new additions and suggestions. Contribute by adding more snippets
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Kasa1905">
+            <img src="https://avatars.githubusercontent.com/u/171919383?v=4" width="100;" alt="Kasa1905"/>
+            <br />
+            <sub><b>Kasa1905</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Vardhaman619">
             <img src="https://avatars.githubusercontent.com/u/97441447?v=4" width="100;" alt="Vardhaman619"/>
             <br />
             <sub><b>Vardhaman619</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Ashwini-955">
             <img src="https://avatars.githubusercontent.com/u/158430651?v=4" width="100;" alt="Ashwini-955"/>
             <br />
             <sub><b>Ashwini-955</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/ashhh17-sys">
             <img src="https://avatars.githubusercontent.com/u/179872041?v=4" width="100;" alt="ashhh17-sys"/>
@@ -314,15 +321,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>Ocidemus</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/mrical">
             <img src="https://avatars.githubusercontent.com/u/60258119?v=4" width="100;" alt="mrical"/>
             <br />
             <sub><b>mrical</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/Shubhamchavan15">
             <img src="https://avatars.githubusercontent.com/u/153620992?v=4" width="100;" alt="Shubhamchavan15"/>
@@ -357,15 +364,15 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <br />
             <sub><b>Vidsp21</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/Soham-2">
             <img src="https://avatars.githubusercontent.com/u/180564342?v=4" width="100;" alt="Soham-2"/>
             <br />
             <sub><b>Soham-2</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/rudra1ghosh">
             <img src="https://avatars.githubusercontent.com/u/134212273?v=4" width="100;" alt="rudra1ghosh"/>
@@ -399,13 +406,6 @@ We are open to new additions and suggestions. Contribute by adding more snippets
             <img src="https://avatars.githubusercontent.com/u/145311546?v=4" width="100;" alt="LEARNER1432"/>
             <br />
             <sub><b>LEARNER1432</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/Kasa1905">
-            <img src="https://avatars.githubusercontent.com/u/171919383?v=4" width="100;" alt="Kasa1905"/>
-            <br />
-            <sub><b>Kasa1905</b></sub>
         </a>
     </td></tr>
 <tr>
