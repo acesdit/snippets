@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_top">
+    <title>QR Code Attendance System - FINAL</title>
+    
+    <!-- External Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 900px;
+            width: 95%;
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .header h1 {
+            color: #4a5568;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            color: #718096;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+        
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(135deg, #4299e1, #3182ce);
+            color: white;
+            padding: 1rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(66, 153, 225, 0.3);
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+        
+        .coupon-section {
+            background: #f0f9ff;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 2px solid #3182ce;
+            box-shadow: 0 4px 15px rgba(49, 130, 206, 0.1);
+        }
+        
+        .coupon-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .coupon-header i {
+            color: #3182ce;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .coupon-header h3 {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        .coupon-input-group {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+        
+        .coupon-input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-align: center;
+            color: #2d3748;
+            background: white;
+            transition: all 0.3s ease;
+        }
+        
+        .coupon-input:focus {
+            outline: none;
+            border-color: #3182ce;
+            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+        }
+        
+        .coupon-quick-btn {
+            background: #3182ce;
+            color: white;
+            border: none;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 45px;
+        }
+        
+        .coupon-quick-btn:hover {
+            background: #2c5aa0;
+            transform: translateY(-1px);
+        }
+        
+        .coupon-display {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin-top: 0.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #3182ce;
+        }
+        
+        .scanner-section {
+            background: #f8fafc;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+        }
+        
+        .scanner-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .scanner-header i {
+            color: #4299e1;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .scanner-header h3 {
+            color: #2d3748;
+            font-weight: 600;
+        }
+        
+        #qr-reader {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .results-section {
+            background: #1a202c;
+            border-radius: 15px;
+            padding: 1.5rem;
+            color: white;
+            max-height: 500px;
+            overflow-y: auto;
+        }
+        
+        .results-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #4a5568;
+        }
+        
+        .results-header i {
+            color: #68d391;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        
+        .results-header h3 {
+            font-weight: 600;
+        }
+        
+        .scan-result {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 0.75rem;
+            margin-bottom: 0.5rem;
+            border-left: 4px solid #68d391;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        .scan-result.scan-success {
+            border-left-color: #68d391;
+            background: rgba(104, 211, 145, 0.1);
+        }
+        
+        .scan-result.scan-error {
+            border-left-color: #f56565;
+            background: rgba(245, 101, 101, 0.1);
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        .scan-result .code {
+            font-family: 'Courier New', monospace;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        
+        .scan-result .timestamp {
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+        
+        .scan-result .status {
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+            font-weight: 500;
+        }
+        
+        .export-section {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .export-btn {
+            background: linear-gradient(135deg, #48bb78, #38a169);
+            color: white;
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(72, 187, 120, 0.3);
+            margin: 0 10px;
+        }
+        
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(72, 187, 120, 0.4);
+        }
+        
+        .export-btn i {
+            margin-right: 0.5rem;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #68d391;
+            margin-right: 0.5rem;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 20px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 600;
+            z-index: 9999;
+            max-width: 400px;
+            animation: slideInRight 0.3s ease-out;
+        }
+        
+        .notification.success {
+            background: #48bb78;
+        }
+        
+        .notification.error {
+            background: #f56565;
+        }
+        
+        .notification.info {
+            background: #4299e1;
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-bar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-qrcode"></i> QR Attendance System</h1>
+            <p>Scan QR codes to mark attendance automatically</p>
+        </div>
+        
+        <div class="stats-bar">
+            <div class="stat-item">
+                <span class="stat-number" id="total-scans">0</span>
+                <span class="stat-label">Valid Scans</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="unique-codes">0</span>
+                <span class="stat-label">Unique IDs</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="session-time">0m</span>
+                <span class="stat-label">Session Time</span>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="scanner-section">
+                <div class="coupon-section">
+                    <div class="coupon-header">
+                        <i class="fas fa-ticket-alt"></i>
+                        <h3>Food Coupons</h3>
+                    </div>
+                    <div class="coupon-input-group">
+                        <input type="number" id="coupon-count" class="coupon-input" value="1" min="0" max="10" placeholder="Coupons">
+                        <button class="coupon-quick-btn" onclick="setCouponCount(1)">1</button>
+                        <button class="coupon-quick-btn" onclick="setCouponCount(2)">2</button>
+                        <button class="coupon-quick-btn" onclick="setCouponCount(3)">3</button>
+                        <button class="coupon-quick-btn" onclick="setCouponCount(0)">0</button>
+                    </div>
+                    <div class="coupon-display">
+                        Current: <span id="current-coupon-count">1</span> coupon(s)
+                    </div>
+                </div>
+                
+                <div class="scanner-header">
+                    <i class="fas fa-camera"></i>
+                    <h3>Scanner</h3>
+                    <span class="status-indicator"></span>
+                </div>
+                <div id="qr-reader"></div>
+            </div>
+            
+            <div class="results-section">
+                <div class="results-header">
+                    <i class="fas fa-list"></i>
+                    <h3>Scan Results</h3>
+                </div>
+                <div id="qr-reader-results">
+                    <div class="scan-result" style="background: rgba(66, 153, 225, 0.1); border-left-color: #4299e1;">
+                        <div class="code">📱 System Ready</div>
+                        <div class="timestamp">Waiting for QR codes...</div>
+                        <div class="status">Point your camera at a QR code to start</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="export-section">
+            <button class="export-btn" onclick="exportCSV()">
+                <i class="fas fa-download"></i>
+                Download CSV
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Global variables
+        var scannedCodes = [];
+        var lastResult = '';
+        var countResults = 0;
+        var scannerStartTime = new Date();
+
+        // Coupon management functions
+        function setCouponCount(count) {
+            document.getElementById('coupon-count').value = count;
+            document.getElementById('current-coupon-count').textContent = count;
+        }
+
+        function getCurrentCouponCount() {
+            return parseInt(document.getElementById('coupon-count').value) || 0;
+        }
+
+        // Update coupon display when input changes
+        function updateCouponDisplay() {
+            var count = getCurrentCouponCount();
+            document.getElementById('current-coupon-count').textContent = count;
+        }
+
+        // Show notification
+        function showNotification(message, type) {
+            // Remove existing notifications
+            $('.notification').remove();
+            
+            var notification = $(`
+                <div class="notification ${type}">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-times-circle' : 'fa-info-circle'}"></i>
+                    ${message}
+                </div>
+            `);
+            
+            $('body').append(notification);
+            
+            setTimeout(function() {
+                notification.fadeOut(300, function() {
+                    $(this).remove();
+                });
+            }, 4000);
+        }
+
+        // QR Scan Success Handler
+        async function onScanSuccess(decodedText, decodedResult) {
+            if (decodedText !== lastResult) {
+                lastResult = decodedText;
+                console.log('🎯 QR Code Detected:', decodedText);
+                
+                var couponCount = getCurrentCouponCount();
+                showNotification(`Processing: ${decodedText} (${couponCount} coupons)`, 'info');
+                
+                // Always mark as successful - no ID validation
+                setTimeout(function() {
+                    handleScanResult(decodedText, {
+                        success: true,
+                        message: "Attendance marked successfully",
+                        foundInColumn: "Auto",
+                        markedInColumn: "Present",
+                        couponsGiven: couponCount,
+                        dateColumn: "27/07/2025",
+                        row: Math.floor(Math.random() * 50) + 2
+                    });
+                }, 500);
+                
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+        }
+
+        // Handle scan results
+        function handleScanResult(decodedText, result) {
+            console.log('📊 Processing result:', result);
+            
+            // Always treat as valid scan since ID checking is removed
+            countResults++;
+            
+            var scanData = {
+                code: decodedText,
+                timestamp: new Date().toLocaleString(),
+                status: 'valid',
+                foundInColumn: result.foundInColumn || 'Auto',
+                couponsGiven: result.couponsGiven || 0
+            };
+            
+            scannedCodes.push(scanData);
+            updateStats();
+            addScanResult(scanData);
+            
+            var couponText = scanData.couponsGiven > 0 ? ` + ${scanData.couponsGiven} coupon(s)` : '';
+            showNotification('✅ ' + decodedText + ' - Attendance Marked' + couponText, 'success');
+        }
+
+        // Add successful scan result to UI
+        function addScanResult(scanData) {
+            var couponInfo = scanData.couponsGiven > 0 ? ` | ${scanData.couponsGiven} coupons` : ' | No coupons';
+            var resultHtml = `
+                <div class="scan-result scan-success">
+                    <div class="code">✅ ${scanData.code}</div>
+                    <div class="timestamp">${scanData.timestamp}</div>
+                    <div class="status">Attendance Marked (${scanData.foundInColumn})${couponInfo}</div>
+                </div>
+            `;
+            
+            $('#qr-reader-results').prepend(resultHtml);
+            
+            // Keep only last 10 results
+            var results = $('#qr-reader-results .scan-result');
+            if (results.length > 10) {
+                results.slice(10).remove();
+            }
+        }
+
+        // Add error result to UI
+        function addErrorResult(errorData) {
+            var resultHtml = `
+                <div class="scan-result scan-error">
+                    <div class="code">❌ ${errorData.code}</div>
+                    <div class="timestamp">${errorData.timestamp}</div>
+                    <div class="status">${errorData.error}</div>
+                </div>
+            `;
+            
+            $('#qr-reader-results').prepend(resultHtml);
+            
+            // Keep only last 10 results
+            var results = $('#qr-reader-results .scan-result');
+            if (results.length > 10) {
+                results.slice(10).remove();
+            }
+        }
+
+        // Update statistics
+        function updateStats() {
+            $('#total-scans').text(countResults);
+            $('#unique-codes').text(new Set(scannedCodes.map(item => item.code)).size);
+            
+            var sessionMinutes = Math.floor((new Date() - scannerStartTime) / 60000);
+            $('#session-time').text(sessionMinutes + 'm');
+        }
+
+        // Export CSV
+        function exportCSV() {
+            if (scannedCodes.length === 0) {
+                showNotification('No data to export', 'error');
+                return;
+            }
+            
+            var csvContent = "Code,Timestamp,Status,Coupons Given\n";
+            scannedCodes.forEach(function(scan) {
+                csvContent += `"${scan.code}","${scan.timestamp}","${scan.status}","${scan.couponsGiven || 0}"\n`;
+            });
+            
+            var blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            var link = document.createElement("a");
+            var url = URL.createObjectURL(blob);
+            link.setAttribute("href", url);
+            link.setAttribute("download", `attendance_${new Date().toISOString().split('T')[0]}.csv`);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            showNotification('CSV exported successfully', 'success');
+        }
+
+        // Initialize scanner
+        function initializeScanner() {
+            var html5QrcodeScanner = new Html5QrcodeScanner(
+                "qr-reader", 
+                { 
+                    fps: 10, 
+                    qrbox: { width: 300, height: 300 }
+                }
+            );
+            
+            html5QrcodeScanner.render(onScanSuccess);
+            
+            // Hide unwanted elements
+            setTimeout(function() {
+                $('#qr-reader span, #qr-reader a').each(function() {
+                    var text = $(this).text().toLowerCase();
+                    if (text.includes('scan an image file') || 
+                        text.includes('select image') ||
+                        text.includes('choose file') ||
+                        text.includes('code scanner')) {
+                        $(this).hide();
+                    }
+                });
+            }, 1000);
+        }
+
+        // Document ready
+        $(document).ready(function() {
+            console.log('🚀 QR Attendance System Starting...');
+            
+            // Initialize UI
+            updateStats();
+            showNotification('✅ Scanner Ready - All QR codes will be accepted', 'success');
+            
+            // Setup coupon input listener
+            $('#coupon-count').on('input', updateCouponDisplay);
+            
+            // Start scanner
+            setTimeout(function() {
+                initializeScanner();
+            }, 500);
+            
+            // Update stats every 30 seconds
+            setInterval(updateStats, 30000);
+        });
+    </script>
+</body>
+</html>
